@@ -13,7 +13,7 @@ namespace EEMod.Projectiles.TennisRackets
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Grad");
+            // DisplayName.SetDefault("Grad");
         }
 
         public override void SetDefaults()

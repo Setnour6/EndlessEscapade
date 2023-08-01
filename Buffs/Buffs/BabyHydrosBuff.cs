@@ -7,8 +7,8 @@ namespace EEMod.Buffs.Buffs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Baby Hydros");
-            Description.SetDefault("The Baby Hydros fights for you");
+            // DisplayName.SetDefault("Baby Hydros");
+            // Description.SetDefault("The Baby Hydros fights for you");
             Main.buffNoSave[Type] = true;
             Main.buffNoTimeDisplay[Type] = true;
         }

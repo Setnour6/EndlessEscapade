@@ -8,7 +8,7 @@ namespace EEMod.Items.Mounts
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Surfboard");
+            // DisplayName.SetDefault("Surfboard");
         }
 
         public override void SetDefaults()

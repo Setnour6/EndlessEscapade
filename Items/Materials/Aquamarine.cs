@@ -9,7 +9,7 @@ namespace EEMod.Items.Materials
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquamarine");
+            // DisplayName.SetDefault("Aquamarine");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59; // influences the inventory sort order. 59 is PlatinumBar, higher is more valuable.
         }
 

@@ -74,7 +74,7 @@ namespace EEMod.NPCs.Goblins
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Hex Bolt");
+            // DisplayName.SetDefault("Hex Bolt");
         }
 
         public override void SetDefaults()

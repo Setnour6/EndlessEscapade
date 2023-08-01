@@ -9,7 +9,7 @@ namespace EEMod.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Kelpleaf Block");
+            // DisplayName.SetDefault("Kelpleaf Block");
         }
 
         public override void SetDefaults()

@@ -11,7 +11,7 @@ namespace EEMod.Items.Weapons.Melee.Yoyos
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Kelp Throw");
+            // DisplayName.SetDefault("Kelp Throw");
         }
 
         public override void SetDefaults()

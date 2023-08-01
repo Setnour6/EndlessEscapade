@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.TropicalWood
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tropical Wood Helmet");
-            Tooltip.SetDefault("2% increased summon damage");
+            // DisplayName.SetDefault("Tropical Wood Helmet");
+            // Tooltip.SetDefault("2% increased summon damage");
         }
 
         public override void SetDefaults()

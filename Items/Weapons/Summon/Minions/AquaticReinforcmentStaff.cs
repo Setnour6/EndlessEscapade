@@ -9,7 +9,7 @@ namespace EEMod.Items.Weapons.Summon.Minions
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquatic Reinforcment");
+            // DisplayName.SetDefault("Aquatic Reinforcment");
         }
 
         public override void SetDefaults()

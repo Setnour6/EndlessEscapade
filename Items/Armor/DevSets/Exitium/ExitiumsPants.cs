@@ -9,8 +9,8 @@ namespace EEMod.Items.Armor.DevSets.Exitium
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Exitium's Pants");
-            Tooltip.SetDefault("'The dev server is indeed an asylum'\n'Great for impersonating mod devs!'");
+            // DisplayName.SetDefault("Exitium's Pants");
+            // Tooltip.SetDefault("'The dev server is indeed an asylum'\n'Great for impersonating mod devs!'");
         }
 
         public override void SetDefaults()

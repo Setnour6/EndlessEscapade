@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -24,8 +25,8 @@ namespace EEMod.Tiles.Banners
             TileObjectData.addTile(Type);
             DustType = -1;
             DisableSmartCursor = true;
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Banner");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Banner");
             AddMapEntry(new Color(13, 88, 130), name);
         }
 

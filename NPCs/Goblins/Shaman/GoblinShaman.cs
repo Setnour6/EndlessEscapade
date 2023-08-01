@@ -14,7 +14,7 @@ namespace EEMod.NPCs.Goblins.Shaman
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Goblin Shaman");
+            // DisplayName.SetDefault("Goblin Shaman");
             //Main.npcFrameCount[npc.type] = 6;
         }
 
@@ -292,7 +292,7 @@ namespace EEMod.NPCs.Goblins.Shaman
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Hex Bolt");
+            // DisplayName.SetDefault("Hex Bolt");
         }
 
         public override void SetDefaults()
@@ -367,7 +367,7 @@ namespace EEMod.NPCs.Goblins.Shaman
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("");
+            // DisplayName.SetDefault("");
             Main.projFrames[Projectile.type] = 1;
         }
 

@@ -12,8 +12,8 @@ namespace EEMod.Items.Armor.Dalantinium
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Mask");
-            Tooltip.SetDefault("6% reduced ammo consumption");
+            // DisplayName.SetDefault("Dalantinium Mask");
+            // Tooltip.SetDefault("6% reduced ammo consumption");
         }
 
         public override void SetDefaults()

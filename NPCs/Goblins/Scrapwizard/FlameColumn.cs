@@ -14,7 +14,7 @@ namespace EEMod.NPCs.Goblins.Scrapwizard
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Shadowfire");
+            // DisplayName.SetDefault("Shadowfire");
         }
 
         public override void SetDefaults()

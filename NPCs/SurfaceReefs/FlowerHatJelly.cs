@@ -8,7 +8,7 @@ namespace EEMod.NPCs.SurfaceReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Flower Hat Jelly");
+            // DisplayName.SetDefault("Flower Hat Jelly");
             //bannerItem = ModContent.ItemType<Items.Banners.LunaJellyBanner>();
         }
 

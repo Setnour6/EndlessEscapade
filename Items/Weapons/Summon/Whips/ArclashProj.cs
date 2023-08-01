@@ -66,7 +66,7 @@ namespace EEMod.Items.Weapons.Summon.Whips
             return true;
         }
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             player.MinionAttackTargetNPC = target.whoAmI;
 
@@ -75,11 +75,11 @@ namespace EEMod.Items.Weapons.Summon.Whips
                 player.AddBuff(buffGivenToPlayer, buffTime);
             }
 
-            NpcEffects(target, damage, knockback, crit);
+            NpcEffects(target, hit, damageDone);
         }
 
-        public virtual void NpcEffects(NPC target, int damage, float knockback, bool crit)
-        {
+        public virtual void NpcEffects(NPC target, NPC.HitInfo hit, int damageDone) // previously: NpcEffects(NPC target, int damage, float knockback, bool crit)
+		{
 
         }
 
@@ -368,15 +368,15 @@ namespace EEMod.Items.Weapons.Summon.Whips
                             //    RealDamage += Main.npc[HitNPC].checkArmorPenetration(player.armorPenetration);
                             //}
 
-                            int dmgDone = (int)Main.npc[HitNPC].StrikeNPC(RealDamage, knockBack, player.direction, false);
+                            int dmgDone = (int)Main.npc[HitNPC].SimpleStrikeNPC(RealDamage, player.direction, knockBack: knockBack);
 
                             if (sItem.ModItem != null)
                             {
-                                sItem.ModItem.OnHitNPC(player, Main.npc[HitNPC], RealDamage, knockBack, false);
-                            }
+                                sItem.ModItem.OnHitNPC(player, Main.npc[HitNPC], hitNpc.CalculateHitInfo(RealDamage, player.direction), RealDamage); // might need to change
+							}
 
-                            OnHitNPC(Main.npc[HitNPC], RealDamage, knockBack, false);
-                            ApplyNPCOnHitEffects(sItem, itemRectangle, num, knockBack, HitNPC, RealDamage, dmgDone);
+                            OnHitNPC(Main.npc[HitNPC], hitNpc.CalculateHitInfo(RealDamage, player.direction), RealDamage); // might need to change
+							ApplyNPCOnHitEffects(sItem, itemRectangle, num, knockBack, HitNPC, RealDamage, dmgDone);
 
                             int num5 = Item.NPCtoBanner(Main.npc[HitNPC].BannerID());
                             if (num5 >= 0)
@@ -386,7 +386,7 @@ namespace EEMod.Items.Weapons.Summon.Whips
 
                             if (Main.netMode != NetmodeID.SinglePlayer)
                             {
-                                NetMessage.SendData(MessageID.StrikeNPC, -1, -1, null, HitNPC, RealDamage, knockBack, player.direction);
+                                NetMessage.SendData(MessageID.DamageNPC, -1, -1, null, HitNPC, RealDamage, knockBack, player.direction);
                             }
 
                             if (player.accDreamCatcher)

@@ -9,7 +9,7 @@ namespace EEMod.Projectiles
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Water Dragon's Bubble");
+            // DisplayName.SetDefault("Water Dragon's Bubble");
         }
 
         public override void SetDefaults()

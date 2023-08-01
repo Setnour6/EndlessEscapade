@@ -12,8 +12,8 @@ namespace EEMod.Items.Shipyard.Figureheads
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Wooden Figurehead");
-            Tooltip.SetDefault("");
+            // DisplayName.SetDefault("Wooden Figurehead");
+            // Tooltip.SetDefault("");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59;
         }
 

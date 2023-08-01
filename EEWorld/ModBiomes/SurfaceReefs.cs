@@ -24,7 +24,7 @@ namespace EEMod.EEWorld.ModBiomes
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Surface Reefs");
+			// DisplayName.SetDefault("Surface Reefs");
 		}
 
 		public override bool IsBiomeActive(Player player)

@@ -8,7 +8,7 @@ namespace EEMod.Projectiles.Enemy
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Mechanical Lure");
+            // DisplayName.SetDefault("Mechanical Lure");
         }
 
         public override void SetDefaults()
@@ -50,7 +50,7 @@ namespace EEMod.Projectiles.Enemy
             Main.npc[Projectile.owner].ai[3] = 0;
         }
 
-        public override void OnHitPlayer(Player target, int damage, bool crit)
+        public override void OnHitPlayer(Player target, Player.HurtInfo info)
         {
             Projectile.ai[1] = target.whoAmI;
             Projectile.ai[0] = 1;

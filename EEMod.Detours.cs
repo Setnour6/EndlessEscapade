@@ -45,6 +45,7 @@ using Terraria.GameContent.Liquid;
 using Terraria.Utilities;
 using Terraria.Graphics.Light;
 using Terraria.GameContent.Shaders;
+using Terraria.GameContent.Drawing;
 
 namespace EEMod
 {
@@ -63,40 +64,40 @@ namespace EEMod
 
         private void LoadDetours()
         {
-            On.Terraria.Lighting.AddLight_int_int_float_float_float += RegisterLightPoint;
+            Terraria.On_Lighting.AddLight_int_int_float_float_float += RegisterLightPoint;
 
-            On.Terraria.Main.Draw += ManageWorldLoadUI;
-            On.Terraria.Main.DrawProjectiles += RenderSeamap;
-            On.Terraria.Main.DrawWoF += RenderBehindTiles;
-            On.Terraria.Main.DoDraw_WallsTilesNPCs += Main_DoDraw_WallsTilesNPCs;
-            On.Terraria.Main.CacheNPCDraws += PreRenderNPCs;
+            Terraria.On_Main.Draw += ManageWorldLoadUI;
+            Terraria.On_Main.DrawProjectiles += RenderSeamap;
+            Terraria.On_Main.DrawWoF += RenderBehindTiles;
+            Terraria.On_Main.DoDraw_WallsTilesNPCs += Main_DoDraw_WallsTilesNPCs;
+            Terraria.On_Main.CacheNPCDraws += PreRenderNPCs;
 
-            On.Terraria.Main.DrawWater += WaterAlphaMod;
+            Terraria.On_Main.oldDrawWater += WaterAlphaMod;
 
-            On.Terraria.GameContent.Drawing.TileDrawing.DrawPartialLiquid += TileDrawing_DrawPartialLiquid;
+            Terraria.GameContent.Drawing.On_TileDrawing.DrawPartialLiquid += TileDrawing_DrawPartialLiquid;
 
-            On.Terraria.Main.DrawBlack += Main_DrawBlack;
+            Terraria.On_Main.DrawBlack += Main_DrawBlack;
 
-            On.Terraria.Main.DoDraw_UpdateCameraPosition += RenderPrimitives;
+            Terraria.On_Main.DoDraw_UpdateCameraPosition += RenderPrimitives;
 
             //On.Terraria.Main.DoDraw_WallsAndBlacks += DrawGoblinFortBg;
 
-            On.Terraria.UI.IngameFancyUI.Draw += DisableFancyUIOnSeamap;
+            Terraria.UI.On_IngameFancyUI.Draw += DisableFancyUIOnSeamap;
 
-            On.Terraria.Main.Draw += DrawLoadingScreen;
+            Terraria.On_Main.Draw += DrawLoadingScreen;
 
-            On.Terraria.Player.Update_NPCCollision += GoblinTableCollision;
+            Terraria.On_Player.Update_NPCCollision += GoblinTableCollision;
 
-            On.Terraria.GameContent.UI.Elements.UIWorldListItem.ctor += PrepareSubworldList;
-            On.Terraria.GameContent.UI.Elements.UIWorldListItem.DrawSelf += RenderSubworldList;
+            Terraria.GameContent.UI.Elements.On_UIWorldListItem.ctor += PrepareSubworldList;
+            Terraria.GameContent.UI.Elements.On_UIWorldListItem.DrawSelf += RenderSubworldList;
 
-            On.Terraria.WorldGen.SaveAndQuitCallBack += ManageSaving;
+            Terraria.On_WorldGen.SaveAndQuitCallBack += ManageSaving;
 
             Main.OnPreDraw += PreparePrimitives;
             Main.OnPreDraw += PrepLoadingScreen;
         }
 
-        private void Main_DoDraw_WallsTilesNPCs(On.Terraria.Main.orig_DoDraw_WallsTilesNPCs orig, Main self)
+        private void Main_DoDraw_WallsTilesNPCs(Terraria.On_Main.orig_DoDraw_WallsTilesNPCs orig, Main self)
         {
             global::EEMod.LightingBuffer.Instance.PreDrawTiles();
 
@@ -105,41 +106,41 @@ namespace EEMod
 
         private void UnloadDetours()
         {
-            On.Terraria.Lighting.AddLight_int_int_float_float_float -= RegisterLightPoint;
+            Terraria.On_Lighting.AddLight_int_int_float_float_float -= RegisterLightPoint;
 
-            On.Terraria.Main.Draw -= ManageWorldLoadUI;
-            On.Terraria.Main.DrawProjectiles -= RenderSeamap;
-            On.Terraria.Main.DrawWoF -= RenderBehindTiles;
-            On.Terraria.Main.DoDraw_WallsTilesNPCs -= Main_DoDraw_WallsTilesNPCs;
-            On.Terraria.Main.CacheNPCDraws -= PreRenderNPCs;
+            Terraria.On_Main.Draw -= ManageWorldLoadUI;
+            Terraria.On_Main.DrawProjectiles -= RenderSeamap;
+            Terraria.On_Main.DrawWoF -= RenderBehindTiles;
+            Terraria.On_Main.DoDraw_WallsTilesNPCs -= Main_DoDraw_WallsTilesNPCs;
+            Terraria.On_Main.CacheNPCDraws -= PreRenderNPCs;
 
-            On.Terraria.Main.DrawWater -= WaterAlphaMod;
+            Terraria.On_Main.oldDrawWater -= WaterAlphaMod;
 
-            On.Terraria.GameContent.Drawing.TileDrawing.DrawPartialLiquid -= TileDrawing_DrawPartialLiquid;
+            Terraria.GameContent.Drawing.On_TileDrawing.DrawPartialLiquid -= TileDrawing_DrawPartialLiquid;
 
-            On.Terraria.Main.DrawBlack -= Main_DrawBlack;
+            Terraria.On_Main.DrawBlack -= Main_DrawBlack;
 
-            On.Terraria.Main.DoDraw_UpdateCameraPosition -= RenderPrimitives;
+            Terraria.On_Main.DoDraw_UpdateCameraPosition -= RenderPrimitives;
 
             //On.Terraria.Main.DoDraw_WallsAndBlacks -= DrawGoblinFortBg;
 
-            On.Terraria.UI.IngameFancyUI.Draw -= DisableFancyUIOnSeamap;
+            Terraria.UI.On_IngameFancyUI.Draw -= DisableFancyUIOnSeamap;
 
-            On.Terraria.Main.Draw -= DrawLoadingScreen;
+            Terraria.On_Main.Draw -= DrawLoadingScreen;
 
-            On.Terraria.Player.Update_NPCCollision -= GoblinTableCollision;
+            Terraria.On_Player.Update_NPCCollision -= GoblinTableCollision;
 
-            On.Terraria.GameContent.UI.Elements.UIWorldListItem.ctor -= PrepareSubworldList;
-            On.Terraria.GameContent.UI.Elements.UIWorldListItem.DrawSelf -= RenderSubworldList;
+            Terraria.GameContent.UI.Elements.On_UIWorldListItem.ctor -= PrepareSubworldList;
+            Terraria.GameContent.UI.Elements.On_UIWorldListItem.DrawSelf -= RenderSubworldList;
 
-            On.Terraria.WorldGen.SaveAndQuitCallBack -= ManageSaving;
+            Terraria.On_WorldGen.SaveAndQuitCallBack -= ManageSaving;
 
             Main.OnPreDraw -= PreparePrimitives;
             Main.OnPreDraw -= PrepLoadingScreen;
         }
 
 
-        private void Main_DrawBlack(On.Terraria.Main.orig_DrawBlack orig, Main self, bool force)
+        private void Main_DrawBlack(Terraria.On_Main.orig_DrawBlack orig, Main self, bool force)
         {
             if(SubworldSystem.IsActive<CoralReefs>() && global::EEMod.LightingBuffer.Instance.bgAlpha > 0) return;
 
@@ -242,8 +243,7 @@ namespace EEMod
                 }
             }
         }
-
-        private unsafe void TileDrawing_DrawPartialLiquid(On.Terraria.GameContent.Drawing.TileDrawing.orig_DrawPartialLiquid orig, Terraria.GameContent.Drawing.TileDrawing self, Tile tileCache, Vector2 position, Rectangle liquidSize, int liquidType, Color aColor)
+		private unsafe void TileDrawing_DrawPartialLiquid(Terraria.GameContent.Drawing.On_TileDrawing.orig_DrawPartialLiquid orig, Terraria.GameContent.Drawing.TileDrawing self, bool behindBlocks, Tile tileCache, ref Vector2 position, ref Rectangle liquidSize, int liquidType, ref VertexColors aColor)
         {
             Vector2 rectangle = new Vector2(Main.offScreenRange, Main.offScreenRange);
             if (Main.drawToScreen)
@@ -319,11 +319,11 @@ namespace EEMod
             if (tileCache.Slope == (SlopeType)1 || tileCache.Slope == (SlopeType)2 || tileCache.Slope == (SlopeType)3 || tileCache.Slope == (SlopeType)4)
             {
                 Main.NewText("NO WAY!!!");
-                Main.spriteBatch.Draw(TextureAssets.LiquidSlope[num2].Value, archivePos, liquidSize, aColor, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
-            }
+                Main.spriteBatch.Draw(TextureAssets.LiquidSlope[num2].Value, archivePos, liquidSize, new(), 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f); // Previously aColor, Now new()
+			}
         }
 
-        private void WaterAlphaMod(On.Terraria.Main.orig_DrawWater orig, Main self, bool bg, int Style, float Alpha)
+        private void WaterAlphaMod(Terraria.On_Main.orig_oldDrawWater orig, Main self, bool bg, int Style, float Alpha)
         {
             orig(self, bg, Style, SubworldSystem.IsActive<CoralReefs>() ? Alpha / 3.5f : Alpha);
         }
@@ -374,7 +374,7 @@ namespace EEMod
         public float leftBound = 1.2f;
         public float rightBound = 1.2f;
 
-        private void DrawLoadingScreen(On.Terraria.Main.orig_Draw orig, Main self, GameTime gameTime)
+        private void DrawLoadingScreen(Terraria.On_Main.orig_Draw orig, Main self, GameTime gameTime)
         {
             orig(self, gameTime);
 
@@ -498,7 +498,7 @@ namespace EEMod
             Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend, SamplerState.PointClamp, null, null, null);
         }
 
-        private void DrawGoblinFortBg(On.Terraria.Main.orig_DoDraw_WallsAndBlacks orig, Main self)
+        private void DrawGoblinFortBg(Terraria.On_Main.orig_DoDraw_WallsAndBlacks orig, Main self)
         {
             orig(self);
 
@@ -531,13 +531,13 @@ namespace EEMod
             }
         }
 
-        private bool DisableFancyUIOnSeamap(On.Terraria.UI.IngameFancyUI.orig_Draw orig, SpriteBatch spriteBatch, GameTime gameTime)
+        private bool DisableFancyUIOnSeamap(Terraria.UI.On_IngameFancyUI.orig_Draw orig, SpriteBatch spriteBatch, GameTime gameTime)
         {
             if (SubworldSystem.IsActive<Sea>()) return false;
             else return orig(spriteBatch, gameTime);
         }
 
-        public void GoblinTableCollision(On.Terraria.Player.orig_Update_NPCCollision orig, Player self)
+        public void GoblinTableCollision(Terraria.On_Player.orig_Update_NPCCollision orig, Player self)
         {
             for (int i = 0; i < Main.maxProjectiles; i++)
             {
@@ -583,7 +583,7 @@ namespace EEMod
             orig(self);
         }
 
-        private void RenderPrimitives(On.Terraria.Main.orig_DoDraw_UpdateCameraPosition orig)
+        private void RenderPrimitives(Terraria.On_Main.orig_DoDraw_UpdateCameraPosition orig)
         {
             orig();
 
@@ -683,7 +683,7 @@ namespace EEMod
             }
         }
 
-        private void PrepareSubworldList(On.Terraria.GameContent.UI.Elements.UIWorldListItem.orig_ctor orig, UIWorldListItem self, WorldFileData data, int orderInList, bool canBePlayed)
+        private void PrepareSubworldList(Terraria.GameContent.UI.Elements.On_UIWorldListItem.orig_ctor orig, UIWorldListItem self, WorldFileData data, int orderInList, bool canBePlayed)
         {
             orig(self, data, orderInList, canBePlayed);
 
@@ -733,7 +733,7 @@ namespace EEMod
             self.Append(buttonLabel);
         }
 
-        private void RenderSubworldList(On.Terraria.GameContent.UI.Elements.UIWorldListItem.orig_DrawSelf orig, UIWorldListItem self, SpriteBatch spriteBatch)
+        private void RenderSubworldList(Terraria.GameContent.UI.Elements.On_UIWorldListItem.orig_DrawSelf orig, UIWorldListItem self, SpriteBatch spriteBatch)
         {
             orig(self, spriteBatch);
 
@@ -767,14 +767,14 @@ namespace EEMod
             spriteBatch.Draw(texture, new Vector2(position.X + width - 8f, position.Y), new Rectangle(16, 0, 8, texture.Height), Color.White);
         }
 
-        private void PreRenderNPCs(On.Terraria.Main.orig_CacheNPCDraws orig, Main self)
+        private void PreRenderNPCs(Terraria.On_Main.orig_CacheNPCDraws orig, Main self)
         {
             BeforeNPCCache?.Invoke(Main.spriteBatch);
 
             orig(self);
         }
 
-        private void ManageSaving(On.Terraria.WorldGen.orig_SaveAndQuitCallBack orig, object threadContext)
+        private void ManageSaving(Terraria.On_WorldGen.orig_SaveAndQuitCallBack orig, object threadContext)
         {
             isSaving = true;
 
@@ -783,7 +783,7 @@ namespace EEMod
             isSaving = false;
         }
 
-        private void RenderBehindTiles(On.Terraria.Main.orig_DrawWoF orig, Main self)
+        private void RenderBehindTiles(Terraria.On_Main.orig_DrawWoF orig, Main self)
         {
             Main.spriteBatch.End();
 
@@ -807,7 +807,7 @@ namespace EEMod
                 PrimitiveSystem.primitives._trails.Clear();
         }
 
-        private void RenderSeamap(On.Terraria.Main.orig_DrawProjectiles orig, Main self)
+        private void RenderSeamap(Terraria.On_Main.orig_DrawProjectiles orig, Main self)
         {
             if (!Main.dedServ)
             {
@@ -828,7 +828,7 @@ namespace EEMod
             orig(self);
         }
 
-        private void ManageWorldLoadUI(On.Terraria.Main.orig_Draw orig, Main self, GameTime gameTime)
+        private void ManageWorldLoadUI(Terraria.On_Main.orig_Draw orig, Main self, GameTime gameTime)
         {
             orig(self, gameTime);
 
@@ -842,7 +842,7 @@ namespace EEMod
             }
         }
 
-        private void RegisterLightPoint(On.Terraria.Lighting.orig_AddLight_int_int_float_float_float orig, int i, int j, float R, float G, float B)
+        private void RegisterLightPoint(Terraria.On_Lighting.orig_AddLight_int_int_float_float_float orig, int i, int j, float R, float G, float B)
         {
             orig(i, j, R, G, B);
 

@@ -11,7 +11,7 @@ namespace EEMod.Items.Weapons.Summon.Minions
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aqut");
+            // DisplayName.SetDefault("Aqut");
             //  Main.projFrames[projectile.type] = 2;
             ProjectileID.Sets.MinionSacrificable[Projectile.type] = true;
             //ProjectileID.Sets.CountsAsHoming[Projectile.type] = true;

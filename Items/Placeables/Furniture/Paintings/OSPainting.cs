@@ -8,7 +8,7 @@ namespace EEMod.Items.Placeables.Furniture.Paintings
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Trillion Dollar Company");
+            // DisplayName.SetDefault("Trillion Dollar Company");
         }
 
         public override void SetDefaults()

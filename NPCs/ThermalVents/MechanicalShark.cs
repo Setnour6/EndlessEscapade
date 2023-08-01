@@ -11,7 +11,7 @@ namespace EEMod.NPCs.ThermalVents
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Mechanical Shark");
+            // DisplayName.SetDefault("Mechanical Shark");
             Main.npcFrameCount[NPC.type] = 6;
         }
 

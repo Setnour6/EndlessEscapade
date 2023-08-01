@@ -7,6 +7,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -31,8 +32,8 @@ namespace EEMod.Tiles.Foliage
             TileObjectData.newTile.Direction = TileObjectDirection.None;
             // TileObjectData.newTile.LavaDeath = false;
             TileObjectData.addTile(Type);
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Tropical Tree");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Tropical Tree");
             AddMapEntry(new Color(20, 60, 20), name);
             DisableSmartCursor = true;
             DustType = DustID.Dirt;

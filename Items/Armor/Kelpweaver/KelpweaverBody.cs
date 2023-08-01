@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.Kelpweaver
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Kelpweaver Body");
-            Tooltip.SetDefault("Creepy and crawly");
+            // DisplayName.SetDefault("Kelpweaver Body");
+            // Tooltip.SetDefault("Creepy and crawly");
         }
 
         public override void SetDefaults()

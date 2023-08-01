@@ -9,7 +9,7 @@ namespace EEMod.Items.Tools.Lythen
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lythen Pickaxe");
+            // DisplayName.SetDefault("Lythen Pickaxe");
         }
 
         public override void SetDefaults()

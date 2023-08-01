@@ -14,7 +14,7 @@ namespace EEMod.NPCs.Glowshroom
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Mushroom Mage");
+            // DisplayName.SetDefault("Mushroom Mage");
         }
 
         public override void SetDefaults()
@@ -134,7 +134,7 @@ namespace EEMod.NPCs.Glowshroom
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Mushroom Ball");
+            // DisplayName.SetDefault("Mushroom Ball");
         }
 
         public override void SetDefaults()

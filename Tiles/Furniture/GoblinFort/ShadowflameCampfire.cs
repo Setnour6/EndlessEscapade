@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using EEMod.Items.Materials;
@@ -44,8 +45,8 @@ namespace EEMod.Tiles.Furniture.GoblinFort
 
             TileObjectData.addTile(Type);
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Shadowflame Campfire");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Shadowflame Campfire");
             AddMapEntry(new Color(44, 193, 139), name);
             DustType = DustID.Clentaminator_Cyan;
             DisableSmartCursor = false;

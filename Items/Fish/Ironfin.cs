@@ -8,7 +8,7 @@ namespace EEMod.Items.Fish
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Ironfin");
+            // DisplayName.SetDefault("Ironfin");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59; // influences the inventory sort order. 59 is PlatinumBar, higher is more valuable.
         }
 

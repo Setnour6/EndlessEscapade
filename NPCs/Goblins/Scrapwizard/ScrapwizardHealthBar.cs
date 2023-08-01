@@ -29,7 +29,7 @@ namespace EEMod.NPCs.Goblins.Scrapwizard
 			return null;
 		}
 
-		public override bool? ModifyInfo(ref BigProgressBarInfo info, ref float lifePercent, ref float shieldPercent)
+		public override bool? ModifyInfo(ref BigProgressBarInfo info, ref float life, ref float lifeMax, ref float shield, ref float shieldMax)/* tModPorter Note: life and shield current and max values are now separate to allow for hp/shield number text draw */
 		{
 			// Here the game wants to know if to draw the boss bar or not. Return false whenever the conditions don't apply.
 			// If there is no possibility of returning false (or null) the bar will get drawn at times when it shouldn't, so write defensive code!
@@ -41,12 +41,12 @@ namespace EEMod.NPCs.Goblins.Scrapwizard
 			// We assign bossHeadIndex here because we need to use it in GetIconTexture
 			bossHeadIndex = npc.GetBossHeadTextureIndex();
 
-			lifePercent = Utils.Clamp(npc.life / (float)npc.lifeMax, 0f, 1f);
+			life = Utils.Clamp(npc.life / (float)npc.lifeMax, 0f, 1f); // probably maybe not need to change
 
 			if (npc.ModNPC is Scrapwizard body)
 			{
 				// We did all the calculation work on RemainingShields inside the body NPC already so we just have to fetch the value again
-				shieldPercent = Utils.Clamp(body.guardShield, 0f, 1f);
+				shield = Utils.Clamp(body.guardShield, 0f, 1f); // probably maybe not need to change
 			}
 
 			return true;

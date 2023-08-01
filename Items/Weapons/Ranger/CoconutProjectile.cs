@@ -7,7 +7,7 @@ namespace EEMod.Items.Weapons.Ranger
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coconut");
+            // DisplayName.SetDefault("Coconut");
         }
 
         public override void SetDefaults()

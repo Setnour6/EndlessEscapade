@@ -10,7 +10,7 @@ namespace EEMod.Items.Weapons.Ranger.Guns
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Bubble Blitzer");
+            // DisplayName.SetDefault("Bubble Blitzer");
         }
 
         public override void SetDefaults()

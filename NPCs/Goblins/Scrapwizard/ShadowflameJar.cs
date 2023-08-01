@@ -14,7 +14,7 @@ namespace EEMod.NPCs.Goblins.Scrapwizard
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Shadowfire Concoction");
+            // DisplayName.SetDefault("Shadowfire Concoction");
         }
 
         public override void SetDefaults()

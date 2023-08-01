@@ -11,7 +11,7 @@ namespace EEMod.Items.Weapons.Melee.Shivs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sailor's Blade");
+            // DisplayName.SetDefault("Sailor's Blade");
         }
 
         public override void SetDefaults()
@@ -34,7 +34,7 @@ namespace EEMod.Items.Weapons.Melee.Shivs
             ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
         }
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             for (var i = 0; i < 4; i++)
             {

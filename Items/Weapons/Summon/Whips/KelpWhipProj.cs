@@ -20,7 +20,7 @@ namespace EEMod.Items.Weapons.Summon.Whips
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Kelp Whip");
+            // DisplayName.SetDefault("Kelp Whip");
         }
 
         public override void SafeSetDefaults()
@@ -37,7 +37,7 @@ namespace EEMod.Items.Weapons.Summon.Whips
             Projectile.localNPCHitCooldown = -1;
         }
 
-        public override void NpcEffects(NPC target, int damage, float knockback, bool crit)
+        public override void NpcEffects(NPC target, NPC.HitInfo hit, int damageDone) // previously: NpcEffects(NPC target, int damage, float knockback, bool crit)
         {
             
         }

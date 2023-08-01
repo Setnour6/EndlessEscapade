@@ -10,7 +10,7 @@ namespace EEMod.Projectiles.CoralReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Thermal Magma");
+            // DisplayName.SetDefault("Thermal Magma");
         }
 
         public override void SetDefaults()

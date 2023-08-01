@@ -11,7 +11,7 @@ namespace EEMod.NPCs.LowerReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Bluering Octopus");
+            // DisplayName.SetDefault("Bluering Octopus");
             //.npcFrameCount[npc.type] = 6;
         }
 

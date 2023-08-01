@@ -10,7 +10,7 @@ namespace EEMod.Projectiles.Hooks
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Kelp Hook");
+            // DisplayName.SetDefault("Kelp Hook");
         }
 
         public override void SetDefaults()

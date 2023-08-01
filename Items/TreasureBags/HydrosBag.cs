@@ -15,7 +15,7 @@ namespace EEMod.Items.TreasureBags
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Treasure Bag");
+            // DisplayName.SetDefault("Treasure Bag");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 100;
         }
 

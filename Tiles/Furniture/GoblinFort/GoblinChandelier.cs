@@ -1,6 +1,7 @@
 ﻿using EEMod.Items.Weapons.Melee;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using System;
@@ -48,9 +49,9 @@ namespace EEMod.Tiles.Furniture.GoblinFort
 
             TileObjectData.addTile(Type);
 
-            ModTranslation name = CreateMapEntryName();
+            LocalizedText name = CreateMapEntryName();
 
-            name.SetDefault("Goblin Banner Big");
+            // name.SetDefault("Goblin Banner Big");
 
             AddMapEntry(new Color(44, 193, 139), name);
 
@@ -119,7 +120,7 @@ namespace EEMod.Tiles.Furniture.GoblinFort
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Chandelier");
+            // DisplayName.SetDefault("Chandelier");
         }
 
         public override void DrawBehind(int index, List<int> behindNPCsAndTiles, List<int> behindNPCs, List<int> behindProjectiles, List<int> overPlayers, List<int> overWiresUI)

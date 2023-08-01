@@ -8,7 +8,7 @@ namespace EEMod.Items.Placeables.Furniture.Paintings
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Snowfield");
+            // DisplayName.SetDefault("Snowfield");
         }
 
         public override void SetDefaults()

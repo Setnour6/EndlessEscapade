@@ -11,7 +11,7 @@ namespace EEMod.Tiles
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tile Experimentation");
+            // DisplayName.SetDefault("Tile Experimentation");
         }
 
         public override void SetDefaults()

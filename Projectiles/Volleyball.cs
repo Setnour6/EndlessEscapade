@@ -11,7 +11,7 @@ namespace EEMod.Projectiles
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Volleyball");
+            // DisplayName.SetDefault("Volleyball");
         }
 
         public override void SetDefaults()

@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.Dalantinium
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Greathelm");
-            Tooltip.SetDefault("5% increased melee speed");
+            // DisplayName.SetDefault("Dalantinium Greathelm");
+            // Tooltip.SetDefault("5% increased melee speed");
         }
 
         public override void SetDefaults()

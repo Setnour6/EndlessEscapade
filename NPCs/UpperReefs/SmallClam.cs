@@ -10,7 +10,7 @@ namespace EEMod.NPCs.UpperReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Clam");
+            // DisplayName.SetDefault("Clam");
             Main.npcFrameCount[NPC.type] = 3;
         }
 
@@ -50,7 +50,7 @@ namespace EEMod.NPCs.UpperReefs
             NPC.value = Item.sellPrice(0, 0, 0, 75);
         }
 
-        public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
+        public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)/* tModPorter Note: bossLifeScale -> balance (bossAdjustment is different, see the docs for details) */
         {
             NPC.lifeMax = (int)(NPC.lifeMax * 0.22f);
         }

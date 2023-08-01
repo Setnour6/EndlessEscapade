@@ -9,7 +9,7 @@ namespace EEMod.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Rusty Pipe");
+            // DisplayName.SetDefault("Rusty Pipe");
         }
 
         public override void SetDefaults()

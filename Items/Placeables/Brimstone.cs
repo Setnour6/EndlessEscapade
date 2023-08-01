@@ -9,7 +9,7 @@ namespace EEMod.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Brimstone");
+            // DisplayName.SetDefault("Brimstone");
         }
 
         public override void SetDefaults()

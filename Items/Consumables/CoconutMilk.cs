@@ -9,7 +9,7 @@ namespace EEMod.Items.Consumables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coconut Milk");
+            // DisplayName.SetDefault("Coconut Milk");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 100;
         }
 

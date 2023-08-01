@@ -6,6 +6,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using EEMod.Items.Placeables.Furniture;
@@ -36,8 +37,8 @@ namespace EEMod.Tiles.Furniture.Shipyard
 
             TileObjectData.addTile(Type);
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Shipbuilder's Workbench");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Shipbuilder's Workbench");
             AddMapEntry(new Color(255, 168, 28), name);
             DustType = DustID.Silver;
             DisableSmartCursor = true;

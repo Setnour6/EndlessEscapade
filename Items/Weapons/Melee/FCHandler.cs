@@ -11,7 +11,7 @@ namespace EEMod.Items.Weapons.Melee
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Feathered Chakram");
+            // DisplayName.SetDefault("Feathered Chakram");
         }
 
         public override void SetDefaults()

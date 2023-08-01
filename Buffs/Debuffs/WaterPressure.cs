@@ -7,8 +7,8 @@ namespace EEMod.Buffs.Debuffs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Water Pressure");
-            Description.SetDefault("The water pressure is crushing in");
+            // DisplayName.SetDefault("Water Pressure");
+            // Description.SetDefault("The water pressure is crushing in");
             Main.buffNoSave[Type] = true;
             Main.debuff[Type] = true;
         }

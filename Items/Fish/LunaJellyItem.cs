@@ -8,7 +8,7 @@ namespace EEMod.Items.Fish
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Luna Jelly");
+            // DisplayName.SetDefault("Luna Jelly");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59; // influences the inventory sort order. 59 is PlatinumBar, higher is more valuable.
         }
 

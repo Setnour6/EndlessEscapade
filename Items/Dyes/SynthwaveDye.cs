@@ -8,7 +8,7 @@ namespace EEMod.Items.Dyes
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Synthwave Dye");
+            // DisplayName.SetDefault("Synthwave Dye");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59; // influences the inventory sort order. 59 is PlatinumBar, higher is more valuable.
         }
 

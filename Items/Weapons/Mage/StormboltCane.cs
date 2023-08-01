@@ -11,7 +11,7 @@ namespace EEMod.Items.Weapons.Mage
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Stormbolt Cane");
+            // DisplayName.SetDefault("Stormbolt Cane");
             Item.staff[Item.type] = true;
         }
 

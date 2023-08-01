@@ -14,7 +14,7 @@ namespace EEMod.Items.Weapons.Melee
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lythen Warhammer");
+            // DisplayName.SetDefault("Lythen Warhammer");
         }
 
         public override void SetDefaults()

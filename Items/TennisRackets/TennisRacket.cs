@@ -10,7 +10,7 @@ namespace EEMod.Items.TennisRackets
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tennis Racket");
+            // DisplayName.SetDefault("Tennis Racket");
         }
 
         public override void SetDefaults()

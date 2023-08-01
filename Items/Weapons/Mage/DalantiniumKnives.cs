@@ -14,7 +14,7 @@ namespace EEMod.Items.Weapons.Mage
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Knives");
+            // DisplayName.SetDefault("Dalantinium Knives");
             Item.staff[Item.type] = true;
         }
 

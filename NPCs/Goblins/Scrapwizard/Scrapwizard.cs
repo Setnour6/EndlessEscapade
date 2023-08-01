@@ -78,7 +78,7 @@ namespace EEMod.NPCs.Goblins.Scrapwizard
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Goblin Scrapwizard");
+            // DisplayName.SetDefault("Goblin Scrapwizard");
         }
 
         public override void SetDefaults()

@@ -8,7 +8,7 @@ namespace EEMod.NPCs.UpperReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lantern Jelly");
+            // DisplayName.SetDefault("Lantern Jelly");
             //bannerItem = ModContent.ItemType<Items.Banners.LunaJellyBanner>();
         }
 

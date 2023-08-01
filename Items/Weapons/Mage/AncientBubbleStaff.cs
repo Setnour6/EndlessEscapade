@@ -12,8 +12,8 @@ namespace EEMod.Items.Weapons.Mage
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Ancient Bubble Staff");
-            Tooltip.SetDefault("Casts an ancient bubble\nRight click the bubble after shooting it to pop it");
+            // DisplayName.SetDefault("Ancient Bubble Staff");
+            // Tooltip.SetDefault("Casts an ancient bubble\nRight click the bubble after shooting it to pop it");
         }
 
         public override void SetDefaults()

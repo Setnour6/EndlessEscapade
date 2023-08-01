@@ -10,7 +10,7 @@ namespace EEMod.Items.Weapons.Mage
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coral Rod");
+            // DisplayName.SetDefault("Coral Rod");
             Item.staff[Item.type] = true;
         }
 

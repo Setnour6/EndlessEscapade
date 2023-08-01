@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Terraria.Enums;
@@ -30,8 +31,8 @@ namespace EEMod.Tiles.Foliage.ThermalVents
             TileObjectData.newTile.Origin = new Point16(0, 0);
             TileObjectData.newTile.CoordinatePadding = 0;
             TileObjectData.addTile(Type);
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Thermal Vent");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Thermal Vent");
             AddMapEntry(new Color(255, 100, 0), name);
             DustType = DustID.Dirt;
         }

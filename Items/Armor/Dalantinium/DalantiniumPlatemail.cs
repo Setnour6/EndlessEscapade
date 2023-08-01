@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.Dalantinium
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Platemail");
-            Tooltip.SetDefault("9% increased all damage");
+            // DisplayName.SetDefault("Dalantinium Platemail");
+            // Tooltip.SetDefault("9% increased all damage");
         }
 
         public override void SetDefaults()

@@ -11,7 +11,7 @@ namespace EEMod.Items.Placeables.Ores
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lythen Ore");
+            // DisplayName.SetDefault("Lythen Ore");
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(6, 10));
         }
 

@@ -35,13 +35,13 @@ namespace EEMod.Tiles.Furniture.Chests
 
 			DustType = DustID.CrystalSerpent_Pink;
 			AdjTiles = new int[] { TileID.Containers };
-			ChestDrop = ItemID.DirtBlock;
+			ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ItemID.DirtBlock;
 
 			// Names
-			ContainerName.SetDefault("Shadowflame Hex Chest");
+			ContainerName/* tModPorter Note: Removed. Override DefaultContainerName instead */.SetDefault("Shadowflame Hex Chest");
 
-			ModTranslation name = CreateMapEntryName();
-			name.SetDefault("Shadowflame Hex Chest");
+			LocalizedText name = CreateMapEntryName();
+			// name.SetDefault("Shadowflame Hex Chest");
 			AddMapEntry(new Color(200, 200, 200), name, MapChestName);
 
 			// Placement
@@ -107,7 +107,7 @@ namespace EEMod.Tiles.Furniture.Chests
 
 		public override void KillMultiTile(int i, int j, int TileFrameX, int TileFrameY)
 		{
-			Item.NewItem(new Terraria.DataStructures.EntitySource_TileBreak(i, j), i * 16, j * 16, 32, 32, ChestDrop);
+			Item.NewItem(new Terraria.DataStructures.EntitySource_TileBreak(i, j), i * 16, j * 16, 32, 32, ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */);
 			Chest.DestroyChest(i, j);
 		}
 

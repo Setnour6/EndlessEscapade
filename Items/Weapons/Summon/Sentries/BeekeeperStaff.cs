@@ -9,7 +9,7 @@ namespace EEMod.Items.Weapons.Summon.Sentries
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Beekeeper Staff");
+            // DisplayName.SetDefault("Beekeeper Staff");
         }
 
         public override void SetDefaults()

@@ -11,7 +11,7 @@ namespace EEMod.NPCs.ThermalVents
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Grebyser");
+            // DisplayName.SetDefault("Grebyser");
             Main.npcFrameCount[NPC.type] = 3;
         }
 
@@ -83,7 +83,7 @@ namespace EEMod.NPCs.ThermalVents
         public override string Texture => Helpers.EmptyTexture;
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Grebyser Flare");
+			// DisplayName.SetDefault("Grebyser Flare");
 		}
 
 		public override void SetDefaults()

@@ -7,7 +7,7 @@ namespace EEMod.Projectiles
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Duelist Blade");
+            // DisplayName.SetDefault("Duelist Blade");
         }
 
         public override void SetDefaults()
@@ -30,7 +30,7 @@ namespace EEMod.Projectiles
             ProjectileID.Sets.TrailingMode[Projectile.type] = 0;
         }
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             for (var i = 0; i < 4; i++)
             {

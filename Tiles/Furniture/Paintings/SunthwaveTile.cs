@@ -2,6 +2,7 @@ using EEMod.Items.Placeables.Furniture.Paintings;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -16,8 +17,8 @@ namespace EEMod.Tiles.Furniture.Paintings
 
             TileObjectData.newTile.CopyFrom(TileObjectData.Style6x3);
             TileObjectData.addTile(Type);
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Moon");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Moon");
             AddMapEntry(new Color(255, 168, 28), name);
             DustType = DustID.Silver;
             DisableSmartCursor = true;

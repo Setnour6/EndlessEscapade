@@ -22,18 +22,18 @@ namespace EEMod.UI.Elements
                 Recalculate();
             }
         }
-        public override void MouseDown(UIMouseEvent evt)
+        public override void LeftMouseDown(UIMouseEvent evt)
         {
-            base.MouseDown(evt);
+            base.LeftMouseDown(evt);
             var d = evt.MousePosition;
             lastX = d.X;
             lastY = d.Y;
             dragging = true;
         }
 
-        public override void MouseUp(UIMouseEvent evt)
+        public override void LeftMouseUp(UIMouseEvent evt)
         {
-            base.MouseUp(evt);
+            base.LeftMouseUp(evt);
             dragging = false;
             Recalculate();
         }

@@ -82,12 +82,12 @@ namespace EEMod
             EEMod.isSaving = true;
         }
 
-        public override void OnEnterWorld(Player player)
+        public override void OnEnterWorld()
         {
             if (prevKey == KeyID.Sea && !hasLoadedIntoWorld)
             {
                 hasLoadedIntoWorld = true;
-                if(lastKeySeamap) player.position = (new Vector2((int)shipCoords.X - 2 + 7 + 12, (int)shipCoords.Y - 18 - 2 + 25) * 16);
+                if(lastKeySeamap) Player.position = (new Vector2((int)shipCoords.X - 2 + 7 + 12, (int)shipCoords.Y - 18 - 2 + 25) * 16);
 
                 Player.GetModPlayer<ShipyardPlayer>().cutSceneTriggerTimer = 0;
                 Player.GetModPlayer<ShipyardPlayer>().triggerSeaCutscene = false;
@@ -95,7 +95,7 @@ namespace EEMod
 
                 lastKeySeamap = false;
 
-                Main.screenPosition = player.Center - new Vector2(Main.screenWidth / 2f, Main.screenHeight / 2f);
+                Main.screenPosition = Player.Center - new Vector2(Main.screenWidth / 2f, Main.screenHeight / 2f);
             }
 
             EEMod.isSaving = false;

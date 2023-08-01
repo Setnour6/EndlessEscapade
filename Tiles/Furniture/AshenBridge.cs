@@ -10,7 +10,7 @@ namespace EEMod.Tiles.Furniture
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Ashen Bridge");
+            // DisplayName.SetDefault("Ashen Bridge");
         }
 
         private static float X(float t,

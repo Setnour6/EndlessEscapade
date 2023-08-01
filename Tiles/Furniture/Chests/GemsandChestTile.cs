@@ -1,4 +1,4 @@
-using EEMod.Items.Placeables.Furniture;
+﻿using EEMod.Items.Placeables.Furniture;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
@@ -33,13 +33,13 @@ namespace EEMod.Tiles.Furniture.Chests
             // TileObjectData.newTile.LavaDeath = false;
             TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, TileObjectData.newTile.Width, 0);
             TileObjectData.addTile(Type);
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Gemsand Chest");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Gemsand Chest");
             AddMapEntry(new Color(255, 0, 0), name);
             DustType = DustID.Dirt;
             DisableSmartCursor = true;
             AdjTiles = new int[] { TileID.Containers };
-            ChestDrop = ModContent.ItemType<GemsandChest>();
+            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<GemsandChest>();
         }
 
         public string MapChestName(string name, int i, int j)
@@ -73,7 +73,7 @@ namespace EEMod.Tiles.Furniture.Chests
 
         public override void KillMultiTile(int i, int j, int TileFrameX, int TileFrameY)
         {
-            Item.NewItem(new Terraria.DataStructures.EntitySource_TileBreak(i, j), i * 16, j * 16, 32, 32, ChestDrop);
+            Item.NewItem(new Terraria.DataStructures.EntitySource_TileBreak(i, j), i * 16, j * 16, 32, 32, ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */);
             Chest.DestroyChest(i, j);
         }
 

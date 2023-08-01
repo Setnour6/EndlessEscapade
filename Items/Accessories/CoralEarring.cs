@@ -8,8 +8,8 @@ namespace EEMod.Items.Accessories
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coral Earring");
-            Tooltip.SetDefault("Forged by master merfolk fisherman");
+            // DisplayName.SetDefault("Coral Earring");
+            // Tooltip.SetDefault("Forged by master merfolk fisherman");
         }
 
         public override void SetDefaults()

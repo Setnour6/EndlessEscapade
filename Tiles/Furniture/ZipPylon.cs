@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace EEMod.Tiles.Furniture
@@ -15,8 +16,8 @@ namespace EEMod.Tiles.Furniture
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = false;
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Zip-Pylon");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Zip-Pylon");
             AddMapEntry(new Color(20, 60, 20), name);
             DisableSmartCursor = true;
             DustType = DustID.Dirt;

@@ -17,8 +17,8 @@ namespace EEMod.Items.Accessories
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Accursed Amulet");
-            Tooltip.SetDefault("Each nearby enemy increases your damage by 0.5%, however also decreases your health by 1.5%" + "\nMax modifier amount of 15 NPCs");
+            // DisplayName.SetDefault("Accursed Amulet");
+            // Tooltip.SetDefault("Each nearby enemy increases your damage by 0.5%, however also decreases your health by 1.5%" + "\nMax modifier amount of 15 NPCs");
         }
 
         public override void SetDefaults()

@@ -12,7 +12,7 @@ namespace EEMod.Projectiles.Enemy
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Blue Ring");
+            // DisplayName.SetDefault("Blue Ring");
         }
 
         public override void SetDefaults()
@@ -50,7 +50,7 @@ namespace EEMod.Projectiles.Enemy
             }
         }
 
-        public override void OnHitPlayer(Player target, int damage, bool crit)
+        public override void OnHitPlayer(Player target, Player.HurtInfo info)
         {
             target.AddBuff(BuffID.Venom, 300);
         }

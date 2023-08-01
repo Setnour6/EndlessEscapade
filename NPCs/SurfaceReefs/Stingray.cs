@@ -10,7 +10,7 @@ namespace EEMod.NPCs.SurfaceReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Stingray");
+            // DisplayName.SetDefault("Stingray");
             Main.npcFrameCount[NPC.type] = 3;
         }
 

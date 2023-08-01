@@ -18,7 +18,7 @@ namespace EEMod.Projectiles.FishingBobbers
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sailor's Bobber");
+            // DisplayName.SetDefault("Sailor's Bobber");
         }
 
         public override void SetDefaults()

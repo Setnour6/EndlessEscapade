@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using EEMod.Items.Materials;
@@ -41,8 +42,8 @@ namespace EEMod.Tiles.Furniture
             TileObjectData.newTile.LavaDeath = false;
             TileObjectData.addTile(Type);
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Shrine to the Seahorse King");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Shrine to the Seahorse King");
             AddMapEntry(new Color(44, 193, 139), name);
             DustType = DustID.Clentaminator_Cyan;
             DisableSmartCursor = false;

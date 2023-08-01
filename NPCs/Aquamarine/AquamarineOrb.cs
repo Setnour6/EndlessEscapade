@@ -17,7 +17,7 @@ namespace EEMod.NPCs.Aquamarine
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("SpikyOrb");
+            // DisplayName.SetDefault("SpikyOrb");
         }
 
         public int rippleCount = 2;

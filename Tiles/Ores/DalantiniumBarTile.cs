@@ -24,7 +24,7 @@ namespace EEMod.Tiles.Ores
             AddMapEntry(new Color(200, 200, 200), Language.GetText("MapObject.MetalBar")); // localized text for "Metal Bar"
         }
 
-        public override bool Drop(int i, int j)
+        public override bool CanDrop(int i, int j)/* tModPorter Note: Removed. Use CanDrop to decide if an item should drop. Use GetItemDrops to decide which item drops. Item drops based on placeStyle are handled automatically now, so this method might be able to be removed altogether. */
         {
             Tile t = Framing.GetTileSafely(i, j);
             int style = t.TileFrameX / 18;
@@ -32,7 +32,7 @@ namespace EEMod.Tiles.Ores
             {
                 Item.NewItem(new Terraria.DataStructures.EntitySource_TileBreak(i, j), i * 16, j * 16, 16, 16, ModContent.ItemType<DalantiniumBar>());
             }
-            return base.Drop(i, j);
+            return base.CanDrop(i, j);
         }
     }
 }

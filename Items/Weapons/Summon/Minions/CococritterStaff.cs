@@ -8,7 +8,7 @@ namespace EEMod.Items.Weapons.Summon.Minions
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Cococritter Staff");
+            // DisplayName.SetDefault("Cococritter Staff");
         }
 
         public override void SetDefaults()

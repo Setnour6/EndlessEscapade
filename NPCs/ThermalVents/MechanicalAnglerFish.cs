@@ -12,7 +12,7 @@ namespace EEMod.NPCs.ThermalVents
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Mechanical Angler Fish");
+            // DisplayName.SetDefault("Mechanical Angler Fish");
             Main.npcFrameCount[NPC.type] = 3;
         }
 

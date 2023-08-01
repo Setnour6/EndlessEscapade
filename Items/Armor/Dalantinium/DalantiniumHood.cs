@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.Dalantinium
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Hood");
-            Tooltip.SetDefault("5% reduced mana usage");
+            // DisplayName.SetDefault("Dalantinium Hood");
+            // Tooltip.SetDefault("5% reduced mana usage");
         }
 
         public override void SetDefaults()

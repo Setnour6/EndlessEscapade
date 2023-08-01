@@ -10,7 +10,7 @@ namespace EEMod.Items.Weapons.Summon.Whips
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Kelp Whip");
+            // DisplayName.SetDefault("Kelp Whip");
         }
 
         public override void SetDefaults()

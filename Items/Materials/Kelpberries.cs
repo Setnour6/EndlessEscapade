@@ -9,8 +9,8 @@ namespace EEMod.Items.Materials
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Kelpberries");
-            Tooltip.SetDefault("Super bright!");
+            // DisplayName.SetDefault("Kelpberries");
+            // Tooltip.SetDefault("Super bright!");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59; // influences the inventory sort order. 59 is PlatinumBar, higher is more valuable.
         }
 

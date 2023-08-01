@@ -9,7 +9,7 @@ namespace EEMod.NPCs.TropicalIslands
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coco Critter");
+            // DisplayName.SetDefault("Coco Critter");
             Main.npcCatchable[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 5;
         }

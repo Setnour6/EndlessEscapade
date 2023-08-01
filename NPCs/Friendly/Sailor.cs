@@ -30,7 +30,7 @@ namespace EEMod.NPCs.Friendly
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sailor");
+            // DisplayName.SetDefault("Sailor");
 
             Main.npcFrameCount[Type] = 25; // The amount of frames the NPC has
 
@@ -77,7 +77,7 @@ namespace EEMod.NPCs.Friendly
             AnimationType = NPCID.Guide;
         }
 
-        public override bool CanTownNPCSpawn(int numTownNPCs, int money)
+        public override bool CanTownNPCSpawn(int numTownNPCs)/* tModPorter Suggestion: Copy the implementation of NPC.SpawnAllowed_Merchant in vanilla if you to count money, and be sure to set a flag when unlocked, so you don't count every tick. */
         {
             for (int k = 0; k < 255; k++)
             {
@@ -295,12 +295,12 @@ namespace EEMod.NPCs.Friendly
         public bool shipAlreadyOpen = false;
         public bool cutsceneActive = false;
 
-        public override void OnChatButtonClicked(bool firstButton, ref bool shop)
+        public override void OnChatButtonClicked(bool firstButton, ref string shopName)
         {
             if (firstButton)
             {
-                shop = true;
-                shipAlreadyOpen = false;
+                shopName = "Sailor Shop"; // definetely need to change if needed
+				shipAlreadyOpen = false;
             }
 
             /*else
@@ -331,13 +331,16 @@ namespace EEMod.NPCs.Friendly
                 }
             }*/
         }
+		public override void AddShops()
+		{
+			var shop = new NPCShop(Type, "Sailor Shop")
+            .Add(ModContent.ItemType<Telescope>())
+			.Add(ModContent.ItemType<FishermansLog>());
 
-        public override void SetupShop(Chest shop, ref int nextSlot)
+            shop.Register();
+		}
+		public override void ModifyActiveShop(string shopName, Item[] items)
         {
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<Telescope>());
-            shop.item[nextSlot].SetDefaults(ModContent.ItemType<FishermansLog>());
-
-            nextSlot++;
             shipAlreadyOpen = false;
         }
 

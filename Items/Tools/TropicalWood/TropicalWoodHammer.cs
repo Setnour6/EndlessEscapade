@@ -9,7 +9,7 @@ namespace EEMod.Items.Tools.TropicalWood
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tropical Wood Hammer");
+            // DisplayName.SetDefault("Tropical Wood Hammer");
         }
 
         public override void SetDefaults()

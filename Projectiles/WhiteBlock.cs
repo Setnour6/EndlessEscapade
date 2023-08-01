@@ -9,7 +9,7 @@ namespace EEMod.Projectiles
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("WhiteBlock");
+            // DisplayName.SetDefault("WhiteBlock");
         }
 
         public override void SetDefaults()

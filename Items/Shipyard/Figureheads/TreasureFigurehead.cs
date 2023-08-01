@@ -9,8 +9,8 @@ namespace EEMod.Items.Shipyard.Figureheads
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Treasure Claw");
-            Tooltip.SetDefault("Use it to dig up Treasure Spots on the Seamap");
+            // DisplayName.SetDefault("Treasure Claw");
+            // Tooltip.SetDefault("Use it to dig up Treasure Spots on the Seamap");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59;
         }
 

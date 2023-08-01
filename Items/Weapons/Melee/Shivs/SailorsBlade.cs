@@ -9,7 +9,7 @@ namespace EEMod.Items.Weapons.Melee.Shivs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sailor's Blade");
+            // DisplayName.SetDefault("Sailor's Blade");
         }
 
         public override void SetDefaults()

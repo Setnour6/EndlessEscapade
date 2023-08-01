@@ -8,7 +8,7 @@ namespace EEMod.NPCs.KelpForest
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Olvinic Snail");
+            // DisplayName.SetDefault("Olvinic Snail");
             Main.npcFrameCount[NPC.type] = 4;
         }
 

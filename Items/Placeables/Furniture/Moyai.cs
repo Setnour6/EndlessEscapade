@@ -16,7 +16,7 @@ namespace EEMod.Items.Placeables.Furniture
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Moyai");
+            // DisplayName.SetDefault("Moyai");
         }
 
         public override void SetDefaults()

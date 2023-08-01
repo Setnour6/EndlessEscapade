@@ -10,7 +10,7 @@ namespace EEMod.Items.Consumables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Vexing Potion");
+            // DisplayName.SetDefault("Vexing Potion");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 100;
         }
 

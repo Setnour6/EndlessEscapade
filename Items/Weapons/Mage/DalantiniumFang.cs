@@ -9,7 +9,7 @@ namespace EEMod.Items.Weapons.Mage
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Fang");
+            // DisplayName.SetDefault("Dalantinium Fang");
         }
 
         public override void SetDefaults()

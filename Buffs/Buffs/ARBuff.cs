@@ -7,8 +7,8 @@ namespace EEMod.Buffs.Buffs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquatic Reinforcment");
-            Description.SetDefault("Pog");
+            // DisplayName.SetDefault("Aquatic Reinforcment");
+            // Description.SetDefault("Pog");
             Main.buffNoSave[Type] = true;
             Main.buffNoTimeDisplay[Type] = true;
         }

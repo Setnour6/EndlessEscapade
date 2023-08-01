@@ -13,7 +13,7 @@ namespace EEMod.NPCs.SurfaceReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sea Slug");
+            // DisplayName.SetDefault("Sea Slug");
             Main.npcCatchable[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 4;
         }

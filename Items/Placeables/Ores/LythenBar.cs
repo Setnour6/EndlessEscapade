@@ -12,7 +12,7 @@ namespace EEMod.Items.Placeables.Ores
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lythen Bar");
+            // DisplayName.SetDefault("Lythen Bar");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59; // influences the inventory sort order. 59 is PlatinumBar, higher is more valuable.
             Main.RegisterItemAnimation(Item.type, new DrawAnimationVertical(6, 7));
         }

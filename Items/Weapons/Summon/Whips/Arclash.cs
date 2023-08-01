@@ -10,7 +10,7 @@ namespace EEMod.Items.Weapons.Summon.Whips
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Arclash");
+            // DisplayName.SetDefault("Arclash");
         }
 
         public override void SetDefaults()

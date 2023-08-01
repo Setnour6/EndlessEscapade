@@ -11,7 +11,7 @@ namespace EEMod.Items.Weapons.Ranger.Launchers
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Mushroom Mortar");
+            // DisplayName.SetDefault("Mushroom Mortar");
         }
 
         public override void SetDefaults()
@@ -46,7 +46,7 @@ namespace EEMod.Items.Weapons.Ranger.Launchers
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Mushroom Mortar");
+            // DisplayName.SetDefault("Mushroom Mortar");
         }
 
         public override void SetDefaults()
@@ -82,7 +82,7 @@ namespace EEMod.Items.Weapons.Ranger.Launchers
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Shroomball");
+            // DisplayName.SetDefault("Shroomball");
         }
 
         public override void SetDefaults()

@@ -8,7 +8,7 @@ namespace EEMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Kusiragama");
+            // DisplayName.SetDefault("Dalantinium Kusiragama");
         }
 
         public override void SetDefaults()
@@ -29,7 +29,7 @@ namespace EEMod.Items.Weapons.Melee
             
         }
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             
         }

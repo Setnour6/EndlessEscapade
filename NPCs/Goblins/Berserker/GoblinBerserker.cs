@@ -15,7 +15,7 @@ namespace EEMod.NPCs.Goblins.Berserker
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Goblin Berserker");
+            // DisplayName.SetDefault("Goblin Berserker");
             //Main.npcFrameCount[npc.type] = 6;
         }
 
@@ -139,7 +139,7 @@ namespace EEMod.NPCs.Goblins.Berserker
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Berserker Axe");
+            // DisplayName.SetDefault("Berserker Axe");
         }
 
         public override void SetDefaults()

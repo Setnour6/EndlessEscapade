@@ -15,7 +15,7 @@ namespace EEMod.Items.Weapons.Melee.Swords
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Darksaber");
+            // DisplayName.SetDefault("Darksaber");
         }
 
         public override void SetDefaults()
@@ -117,7 +117,7 @@ namespace EEMod.Items.Weapons.Melee.Swords
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Darksaber");
+            // DisplayName.SetDefault("Darksaber");
         }
 
         public DarksaberPrimTrail trail;
@@ -294,7 +294,7 @@ namespace EEMod.Items.Weapons.Melee.Swords
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Darksaber");
+            // DisplayName.SetDefault("Darksaber");
         }
 
         public DarksaberPrimTrail2 trail;

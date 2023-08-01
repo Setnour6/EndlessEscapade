@@ -56,7 +56,7 @@ namespace EEMod.Tiles.Foliage.Aquamarine
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquamarine Lamp");
+            // DisplayName.SetDefault("Aquamarine Lamp");
         }
 
         public override string Texture => Helpers.EmptyTexture;

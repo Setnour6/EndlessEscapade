@@ -9,7 +9,7 @@ namespace EEMod.Items.Placeables.Ores
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Ore");
+            // DisplayName.SetDefault("Dalantinium Ore");
         }
 
         public override void SetDefaults()

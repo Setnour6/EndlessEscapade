@@ -9,8 +9,8 @@ namespace EEMod.Items.Armor.DevSets.Vadim
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Yoda Pants");
-            Tooltip.SetDefault("'Great for impersonating mod devs!'");
+            // DisplayName.SetDefault("Yoda Pants");
+            // Tooltip.SetDefault("'Great for impersonating mod devs!'");
         }
 
         public override void SetDefaults()

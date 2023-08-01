@@ -10,7 +10,7 @@ namespace EEMod.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Fisherman's Log");
+            // DisplayName.SetDefault("Fisherman's Log");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59; // influences the inventory sort order. 59 is PlatinumBar, higher is more valuable.
         }
 

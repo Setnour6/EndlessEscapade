@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.TropicalWood
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tropical Wood Chestplate");
-            Tooltip.SetDefault("9% increased all damage");
+            // DisplayName.SetDefault("Tropical Wood Chestplate");
+            // Tooltip.SetDefault("9% increased all damage");
         }
 
         public override void SetDefaults()

@@ -9,8 +9,8 @@ namespace EEMod.Items.Accessories
         //commit check
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Iron Boots");
-            Tooltip.SetDefault("Extremely heavy");
+            // DisplayName.SetDefault("Iron Boots");
+            // Tooltip.SetDefault("Extremely heavy");
         }
 
         public override void SetDefaults()

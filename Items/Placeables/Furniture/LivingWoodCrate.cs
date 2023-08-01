@@ -8,7 +8,7 @@ namespace EEMod.Items.Placeables.Furniture
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Living Wood Crate");
+            // DisplayName.SetDefault("Living Wood Crate");
         }
 
         public override void SetDefaults()

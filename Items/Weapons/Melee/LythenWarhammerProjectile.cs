@@ -14,7 +14,7 @@ namespace EEMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tidebreaker");
+            // DisplayName.SetDefault("Tidebreaker");
             Main.projFrames[Projectile.type] = 3;
         }
 
@@ -213,7 +213,7 @@ namespace EEMod.Items.Weapons.Melee
         }
 
 
-        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
             if (Projectile.ai[1] == 1 && Projectile.ai[0] >= chargeTime)
             {

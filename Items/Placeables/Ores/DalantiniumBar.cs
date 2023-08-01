@@ -9,7 +9,7 @@ namespace EEMod.Items.Placeables.Ores
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Bar");
+            // DisplayName.SetDefault("Dalantinium Bar");
         }
 
         public override void SetDefaults()

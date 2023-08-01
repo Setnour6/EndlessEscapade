@@ -6,6 +6,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using Terraria.ObjectData;
@@ -31,8 +32,8 @@ namespace EEMod.Tiles.Foliage
 
             TileObjectData.addTile(Type);
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Lilypad");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Lilypad");
             AddMapEntry(new Color(28, 78, 47), name);
             DustType = DustID.Grass;
             //SoundStyle = SoundID.Grass;

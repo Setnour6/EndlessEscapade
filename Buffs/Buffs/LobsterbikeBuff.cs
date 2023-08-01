@@ -7,8 +7,8 @@ namespace EEMod.Buffs.Buffs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lobsterbike");
-            Description.SetDefault("Only for REAL men B)");
+            // DisplayName.SetDefault("Lobsterbike");
+            // Description.SetDefault("Only for REAL men B)");
             Main.buffNoSave[Type] = true;
             Main.buffNoTimeDisplay[Type] = true;
         }

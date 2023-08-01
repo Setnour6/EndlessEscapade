@@ -11,8 +11,8 @@ namespace EEMod.Items.Shipyard.Cannonballs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Iron Cannonball");
-            Tooltip.SetDefault("Use this to make your boat shoot cannonballs.");
+            // DisplayName.SetDefault("Iron Cannonball");
+            // Tooltip.SetDefault("Use this to make your boat shoot cannonballs.");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59;
         }
 

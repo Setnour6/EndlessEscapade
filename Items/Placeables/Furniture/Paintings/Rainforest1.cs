@@ -8,7 +8,7 @@ namespace EEMod.Items.Placeables.Furniture.Paintings
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Rainforest");
+            // DisplayName.SetDefault("Rainforest");
         }
 
         public override void SetDefaults()

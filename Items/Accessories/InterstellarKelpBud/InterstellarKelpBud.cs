@@ -13,7 +13,7 @@ namespace EEMod.Items.Accessories.InterstellarKelpBud
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Interstellar Kelp Bud");
+            // DisplayName.SetDefault("Interstellar Kelp Bud");
         }
 
         public override void SetDefaults()
@@ -62,7 +62,7 @@ namespace EEMod.Items.Accessories.InterstellarKelpBud
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Interstellar Kelp Bud");
+            // DisplayName.SetDefault("Interstellar Kelp Bud");
         }
 
         public override void SetDefaults()

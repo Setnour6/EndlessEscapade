@@ -12,7 +12,7 @@ namespace EEMod.Items.Weapons.Ranger.Guns
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Bubble");
+            // DisplayName.SetDefault("Bubble");
         }
 
         public override void SetDefaults()

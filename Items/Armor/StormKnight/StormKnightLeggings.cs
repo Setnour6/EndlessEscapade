@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.StormKnight
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Storm Knight's Leggings");
-            Tooltip.SetDefault("4% increased movement speed");
+            // DisplayName.SetDefault("Storm Knight's Leggings");
+            // Tooltip.SetDefault("4% increased movement speed");
         }
 
         public override void SetDefaults()

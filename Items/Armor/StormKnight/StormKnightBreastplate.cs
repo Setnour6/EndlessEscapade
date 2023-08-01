@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.StormKnight
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Storm Knight's Breastplate");
-            Tooltip.SetDefault("5% increased damage");
+            // DisplayName.SetDefault("Storm Knight's Breastplate");
+            // Tooltip.SetDefault("5% increased damage");
         }
 
         public override void SetDefaults()

@@ -14,7 +14,7 @@ namespace EEMod.Projectiles.CoralReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lightning Bolt");
+            // DisplayName.SetDefault("Lightning Bolt");
         }
 
         public override void SetDefaults()

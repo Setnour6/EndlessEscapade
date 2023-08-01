@@ -10,7 +10,7 @@ namespace EEMod.Projectiles.Hooks
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("${ProjectileName.GemHookAmethyst}");
+            // DisplayName.SetDefault("${ProjectileName.GemHookAmethyst}");
         }
 
         public override void SetDefaults()

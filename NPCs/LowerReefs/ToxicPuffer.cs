@@ -10,7 +10,7 @@ namespace EEMod.NPCs.LowerReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Toxic Puffer");
+            // DisplayName.SetDefault("Toxic Puffer");
         }
 
         public override void SetDefaults()

@@ -10,7 +10,7 @@ namespace EEMod.Projectiles
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Volcano Arrow Proj");
+            // DisplayName.SetDefault("Volcano Arrow Proj");
         }
 
         public override void SetDefaults()

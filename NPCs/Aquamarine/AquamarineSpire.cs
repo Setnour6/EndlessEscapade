@@ -25,7 +25,7 @@ namespace EEMod.NPCs.Aquamarine
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquamarine Spire");
+            // DisplayName.SetDefault("Aquamarine Spire");
         }
 
         public override void SetDefaults()

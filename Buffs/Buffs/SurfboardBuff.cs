@@ -7,8 +7,8 @@ namespace EEMod.Buffs.Buffs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Surfboard");
-            Description.SetDefault("Surf's up, duuuude!");
+            // DisplayName.SetDefault("Surfboard");
+            // Description.SetDefault("Surf's up, duuuude!");
             Main.buffNoSave[Type] = true;
             Main.buffNoTimeDisplay[Type] = true;
         }

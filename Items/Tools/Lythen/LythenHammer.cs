@@ -9,7 +9,7 @@ namespace EEMod.Items.Tools.Lythen
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lythen Hammer");
+            // DisplayName.SetDefault("Lythen Hammer");
         }
 
         public override void SetDefaults()

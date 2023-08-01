@@ -2,6 +2,7 @@ using EEMod.Items.Placeables.Furniture.Paintings;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -15,8 +16,8 @@ namespace EEMod.Tiles.Furniture.Paintings
             Main.tileObsidianKill[Type] = true;
 
             TileObjectData.addTile(Type);
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("OSPainting");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("OSPainting");
             AddMapEntry(new Color(255, 168, 28), name);
             DustType = DustID.Silver;
             DisableSmartCursor = true;

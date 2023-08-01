@@ -10,8 +10,8 @@ namespace EEMod.Items.TennisRackets
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Terracket");
-            Tooltip.SetDefault("Better than the toilet, I guess");
+            // DisplayName.SetDefault("Terracket");
+            // Tooltip.SetDefault("Better than the toilet, I guess");
         }
 
         public override void SetDefaults()

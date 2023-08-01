@@ -17,8 +17,8 @@ namespace EEMod.Items.Armor.StormKnight
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Storm Knight's Crest");
-            Tooltip.SetDefault("5% increased melee damage");
+            // DisplayName.SetDefault("Storm Knight's Crest");
+            // Tooltip.SetDefault("5% increased melee damage");
         }
 
         public override void SetDefaults()
@@ -62,14 +62,14 @@ namespace EEMod.Items.Armor.StormKnight
         public int tallyDamage;
         public bool setComplete;
 
-        public override void ModifyHitNPC(Item item, NPC target, ref int damage, ref float knockback, ref bool crit)
+        public override void ModifyHitNPCWithItem(Item item, NPC target, ref NPC.HitModifiers modifiers)/* tModPorter If you don't need the Item, consider using ModifyHitNPC instead */
         {
             if (setComplete)
             {
                 if (item.DamageType == DamageClass.Melee)
                 {
-                    tallyDamage += (int)damage;
-                }
+                    tallyDamage += (int)item.damage; // will need to change
+				}
 
                 if (tallyDamage >= 200)
                 {

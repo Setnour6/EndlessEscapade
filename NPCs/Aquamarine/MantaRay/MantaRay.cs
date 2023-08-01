@@ -14,7 +14,7 @@ namespace EEMod.NPCs.Aquamarine.MantaRay
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[NPC.type] = 1;
-            DisplayName.SetDefault("Manta Ray");
+            // DisplayName.SetDefault("Manta Ray");
         }
         public override void SetDefaults()
         {

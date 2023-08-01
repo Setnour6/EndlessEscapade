@@ -7,8 +7,8 @@ namespace EEMod.Buffs.Buffs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Thermal Healing");
-            Description.SetDefault("The warmth of the thermal vents heals you");
+            // DisplayName.SetDefault("Thermal Healing");
+            // Description.SetDefault("The warmth of the thermal vents heals you");
             Main.buffNoSave[Type] = true;
         }
     }

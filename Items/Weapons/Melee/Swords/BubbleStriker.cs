@@ -12,7 +12,7 @@ namespace EEMod.Items.Weapons.Melee.Swords
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bubble Striker");
+			// DisplayName.SetDefault("Bubble Striker");
 		}
 
 		public override void SetDefaults()
@@ -34,7 +34,7 @@ namespace EEMod.Items.Weapons.Melee.Swords
 
 			Item.UseSound = SoundID.Item1;
 		}
-		public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+		public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
 		{
 			for (int i = 0; i < 5; i++)
 			{
@@ -46,7 +46,7 @@ namespace EEMod.Items.Weapons.Melee.Swords
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Bubble");
+			// DisplayName.SetDefault("Bubble");
 		}
 		public override void SetDefaults()
 		{
@@ -147,12 +147,12 @@ namespace EEMod.Items.Weapons.Melee.Swords
 			}
 			base.Kill(timeLeft);
         }
-        public override void ModifyHitNPC(NPC target, ref int damage, ref float knockback, ref bool crit, ref int hitDirection)
+        public override void ModifyHitNPC(NPC target, ref NPC.HitModifiers modifiers)
 		{
-			crit = true;
-			base.ModifyHitNPC(target, ref damage, ref knockback, ref crit, ref hitDirection);
+			modifiers.SetCrit();
+			base.ModifyHitNPC(target, ref modifiers);
 		}
-		public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+		public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
 		{
 			int cooldown = 20;
 			Projectile.localNPCImmunity[target.whoAmI] = 20;

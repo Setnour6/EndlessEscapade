@@ -203,7 +203,7 @@ namespace EEMod
                 if (disposed)
                     throw new ObjectDisposedException("Cannot apply a disposed ILHook");
 
-                HookEndpointManager.Modify(_to, _manipulator);
+                MonoModHooks.Modify(_to, _manipulator);
                 _applied = true;
                 OnApply?.Invoke();
             }

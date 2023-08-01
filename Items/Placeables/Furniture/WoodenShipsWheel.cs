@@ -9,8 +9,8 @@ namespace EEMod.Items.Placeables.Furniture
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Wooden Ship's Wheel");
-            Tooltip.SetDefault("Perfect for steering a boat");
+            // DisplayName.SetDefault("Wooden Ship's Wheel");
+            // Tooltip.SetDefault("Perfect for steering a boat");
         }
 
         public override void SetDefaults()

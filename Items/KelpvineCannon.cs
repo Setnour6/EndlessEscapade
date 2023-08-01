@@ -11,7 +11,7 @@ namespace EEMod.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Kelpvine Cannon");
+            // DisplayName.SetDefault("Kelpvine Cannon");
         }
 
         public override void SetDefaults()

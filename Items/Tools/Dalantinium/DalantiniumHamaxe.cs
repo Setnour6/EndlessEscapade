@@ -9,7 +9,7 @@ namespace EEMod.Items.Tools.Dalantinium
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Hamaxe");
+            // DisplayName.SetDefault("Dalantinium Hamaxe");
         }
 
         public override void SetDefaults()

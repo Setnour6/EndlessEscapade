@@ -8,7 +8,7 @@ namespace EEMod.Items.Placeables.Furniture
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Net");
+            // DisplayName.SetDefault("Net");
         }
 
         public override void SetDefaults()

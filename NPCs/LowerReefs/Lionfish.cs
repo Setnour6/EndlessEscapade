@@ -9,7 +9,7 @@ namespace EEMod.NPCs.LowerReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lionfish");
+            // DisplayName.SetDefault("Lionfish");
             Main.npcFrameCount[NPC.type] = 8;
         }
 

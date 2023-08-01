@@ -7,7 +7,7 @@ namespace EEMod.Items.Tools
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Furious Pickaxe");
+            // DisplayName.SetDefault("Furious Pickaxe");
         }
 
         public override void SetDefaults()

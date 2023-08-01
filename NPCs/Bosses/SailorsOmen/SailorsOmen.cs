@@ -16,7 +16,7 @@ namespace EEMod.NPCs.Bosses.SailorsOmen
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sailor's Omen");
+            // DisplayName.SetDefault("Sailor's Omen");
         }
 
         public override void SetDefaults()

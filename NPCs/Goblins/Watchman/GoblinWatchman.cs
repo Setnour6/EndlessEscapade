@@ -18,7 +18,7 @@ namespace EEMod.NPCs.Goblins.Watchman
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Goblin Watchman");
+            // DisplayName.SetDefault("Goblin Watchman");
         }
 
         public override void SetDefaults()

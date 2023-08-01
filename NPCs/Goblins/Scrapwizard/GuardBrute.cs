@@ -15,7 +15,7 @@ namespace EEMod.NPCs.Goblins.Scrapwizard
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Wizard's Guard");
+            // DisplayName.SetDefault("Wizard's Guard");
         }
 
         public override void SetDefaults()

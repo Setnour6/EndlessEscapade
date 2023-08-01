@@ -14,7 +14,7 @@ namespace EEMod.NPCs.Goblins.Scrapgunner
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Goblin Scrapgunner");
+            // DisplayName.SetDefault("Goblin Scrapgunner");
         }
 
         public override void SetDefaults()
@@ -142,7 +142,7 @@ namespace EEMod.NPCs.Goblins.Scrapgunner
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Scrapball");
+            // DisplayName.SetDefault("Scrapball");
         }
 
         public override void SetDefaults()

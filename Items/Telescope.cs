@@ -10,8 +10,8 @@ namespace EEMod.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Telescope");
-            Tooltip.SetDefault("Can be held\nVanity item\n'Set sail!'");
+            // DisplayName.SetDefault("Telescope");
+            // Tooltip.SetDefault("Can be held\nVanity item\n'Set sail!'");
         }
 
         public override void SetDefaults()

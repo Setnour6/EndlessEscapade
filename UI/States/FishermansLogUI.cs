@@ -268,9 +268,9 @@ namespace EEMod.UI.States
                 SetImage(Main.LocalPlayer.GetModPlayer<EEPlayer>().fishLengths[ItemType] == MaxSize ? ModContent.Request<Texture2D>("EEMod/UI/FishBorderGold", AssetRequestMode.ImmediateLoad) : ModContent.Request<Texture2D>("EEMod/UI/FishBorder", AssetRequestMode.ImmediateLoad));
             }
         }
-        public override void Click(UIMouseEvent evt)
+        public override void LeftClick(UIMouseEvent evt)
         {
-            base.Click(evt);
+            base.LeftClick(evt);
             if (Caught)
             {
                 LogUI.Name.SetText(Lang.GetItemNameValue(ItemType));
@@ -425,11 +425,11 @@ namespace EEMod.UI.States
             UserInterface.ActiveInstance = temp;
         }
         
-        public override void MouseDown(UIMouseEvent evt)
+        public override void LeftMouseDown(UIMouseEvent evt)
         {
             UserInterface temp = UserInterface.ActiveInstance;
             UserInterface.ActiveInstance = EEMod.UI.GetInterface("EEInterfacee");
-            base.MouseDown(evt);
+            base.LeftMouseDown(evt);
             UserInterface.ActiveInstance = temp;
         }
     }

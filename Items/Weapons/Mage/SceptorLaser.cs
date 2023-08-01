@@ -13,7 +13,7 @@ namespace EEMod.Items.Weapons.Mage
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquamarine Laser");
+            // DisplayName.SetDefault("Aquamarine Laser");
         }
 
         public override void SetDefaults()

@@ -281,7 +281,7 @@ namespace EEMod.UI.States
             ThemeColor = themeColor;
             Texture = ModContent.Request<Texture2D>("EEMod/UI/DialogueResponse", AssetRequestMode.ImmediateLoad).Value;
         }
-        public override void Click(UIMouseEvent evt)
+        public override void LeftClick(UIMouseEvent evt)
         {
             if (DialogueUI.CanClickAButton)
             {

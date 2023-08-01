@@ -8,8 +8,8 @@ namespace EEMod.Items.Weapons.Melee.Yoyos
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Kelp Throw");
-            Tooltip.SetDefault("Releases damaging baubles when close to enemes");
+            // DisplayName.SetDefault("Kelp Throw");
+            // Tooltip.SetDefault("Releases damaging baubles when close to enemes");
         }
 
         public override void SetDefaults()

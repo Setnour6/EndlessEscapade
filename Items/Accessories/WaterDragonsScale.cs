@@ -9,8 +9,8 @@ namespace EEMod.Items.Accessories
         //commit check
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Water Dragon's Scale");
-            Tooltip.SetDefault("The power of an ancient dragon stirs within you\nReminds you of Lake Floria");
+            // DisplayName.SetDefault("Water Dragon's Scale");
+            // Tooltip.SetDefault("The power of an ancient dragon stirs within you\nReminds you of Lake Floria");
         }
 
         public override void SetDefaults()

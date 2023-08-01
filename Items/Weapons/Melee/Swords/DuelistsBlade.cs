@@ -9,8 +9,8 @@ namespace EEMod.Items.Weapons.Melee.Swords
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Duelist's Blade");
-            Tooltip.SetDefault("It once belonged to an ancient warrior of times past");
+            // DisplayName.SetDefault("Duelist's Blade");
+            // Tooltip.SetDefault("It once belonged to an ancient warrior of times past");
         }
 
         public override void SetDefaults()

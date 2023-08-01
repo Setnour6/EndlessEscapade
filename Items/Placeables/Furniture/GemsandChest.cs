@@ -9,7 +9,7 @@ namespace EEMod.Items.Placeables.Furniture
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Gemsand Chest");
+            // DisplayName.SetDefault("Gemsand Chest");
         }
 
         public override void SetDefaults()

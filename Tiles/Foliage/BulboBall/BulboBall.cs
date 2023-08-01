@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using System;
@@ -31,8 +32,8 @@ namespace EEMod.Tiles.Foliage.BulboBall
             // TileObjectData.newTile.LavaDeath = false;
             TileObjectData.addTile(Type);
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Bulbo Ball");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Bulbo Ball");
             AddMapEntry(new Color(20, 60, 20), name);
             DisableSmartCursor = true;
             DustType = DustID.Dirt;

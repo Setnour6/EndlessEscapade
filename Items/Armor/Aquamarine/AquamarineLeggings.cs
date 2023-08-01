@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.Aquamarine
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquamarine Greaves");
-            Tooltip.SetDefault("");
+            // DisplayName.SetDefault("Aquamarine Greaves");
+            // Tooltip.SetDefault("");
         }
 
         public override void SetDefaults()

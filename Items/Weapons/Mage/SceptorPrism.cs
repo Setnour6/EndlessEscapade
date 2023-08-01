@@ -16,7 +16,7 @@ namespace EEMod.Items.Weapons.Mage
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquamarine Prism");
+            // DisplayName.SetDefault("Aquamarine Prism");
         }
 
         public override void SetDefaults()

@@ -11,7 +11,7 @@ namespace EEMod.Items.FishingPoles
         // You can use vanilla textures by using the format: Terraria/Item_<ID>
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sailor's Pole");
+            // DisplayName.SetDefault("Sailor's Pole");
             //Tooltip.SetDefault("Fires multiple lines at once. Can fish in lava.");
             //Allows the pole to fish in lava
             ItemID.Sets.CanFishInLava[Item.type] = true;

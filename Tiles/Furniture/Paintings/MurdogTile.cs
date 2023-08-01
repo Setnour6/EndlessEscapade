@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using EEMod.Items.Placeables.Furniture.Paintings;
@@ -26,8 +27,8 @@ namespace EEMod.Tiles.Furniture.Paintings
             TileObjectData.newTile.Direction = TileObjectDirection.None;
             TileObjectData.newTile.LavaDeath = true;
             TileObjectData.addTile(Type);
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Murdog");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Murdog");
             AddMapEntry(new Color(20, 60, 20), name);
             DisableSmartCursor = true;
             DustType = DustID.Dirt;

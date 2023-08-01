@@ -10,7 +10,7 @@ namespace EEMod.Items.Armor
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coconut Hat");
+            // DisplayName.SetDefault("Coconut Hat");
         }
 
         public override void SetDefaults()

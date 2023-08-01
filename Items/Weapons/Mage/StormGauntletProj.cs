@@ -18,7 +18,7 @@ namespace EEMod.Items.Weapons.Mage
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Storm Gauntlet");
+            // DisplayName.SetDefault("Storm Gauntlet");
         }
 
         public override void SetDefaults()

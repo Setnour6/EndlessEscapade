@@ -10,7 +10,7 @@ namespace EEMod.Items.Accessories
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Glowshroom Buckler");
+            // DisplayName.SetDefault("Glowshroom Buckler");
         }
 
         public override void SetDefaults()
@@ -133,11 +133,11 @@ namespace EEMod.Items.Accessories
         {
         }
 
-        public override void OnHitByNPC(NPC npc, int damage, bool crit)
+        public override void OnHitByNPC(NPC npc, Player.HurtInfo hurtInfo)
         {
             if (DashActive)
             {
-                npc.StrikeNPC(0, 16f, Player.direction);
+                npc.SimpleStrikeNPC(0, Player.direction); // 16f shsould be used somewhere. Definetely need to change.
             }
         }
     }

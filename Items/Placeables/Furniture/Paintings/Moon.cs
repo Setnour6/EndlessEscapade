@@ -8,7 +8,7 @@ namespace EEMod.Items.Placeables.Furniture.Paintings
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Moon");
+            // DisplayName.SetDefault("Moon");
         }
 
         public override void SetDefaults()

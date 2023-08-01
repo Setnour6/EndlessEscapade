@@ -14,7 +14,7 @@ namespace EEMod.NPCs.SurfaceReefs
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Swordfish");
+            // DisplayName.SetDefault("Swordfish");
             Main.npcCatchable[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 1;
             //bannerItem = ModContent.ItemType<Items.Banners.LunaJellyBanner>();

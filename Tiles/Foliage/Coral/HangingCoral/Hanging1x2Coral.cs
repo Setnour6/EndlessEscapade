@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -21,8 +22,8 @@ namespace EEMod.Tiles.Foliage.Coral.HangingCoral
             };
             TileObjectData.newTile.Origin = new Point16(0, 0);
             TileObjectData.addTile(Type);
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Coral Lamp");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Coral Lamp");
             AddMapEntry(new Color(0, 100, 200), name);
             DustType = DustID.Dirt;
         }

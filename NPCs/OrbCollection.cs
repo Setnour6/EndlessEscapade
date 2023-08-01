@@ -13,7 +13,7 @@ namespace EEMod.NPCs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Orb");
+            // DisplayName.SetDefault("Orb");
         }
 
         public int rippleCount = 2;

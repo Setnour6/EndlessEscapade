@@ -11,7 +11,7 @@ namespace EEMod.Items.Weapons.Ammo
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coral Arrow");
+            // DisplayName.SetDefault("Coral Arrow");
         }
 
         public override void SetDefaults()

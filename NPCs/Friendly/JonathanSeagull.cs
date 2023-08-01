@@ -16,7 +16,7 @@ namespace EEMod.NPCs.Friendly
         public bool IntroductionDialogue;
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Jonathan the Cool Seagull");
+            // DisplayName.SetDefault("Jonathan the Cool Seagull");
         }
 
         public override void SetDefaults()

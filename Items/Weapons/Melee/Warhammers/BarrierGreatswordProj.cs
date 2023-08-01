@@ -7,7 +7,7 @@ namespace EEMod.Items.Weapons.Melee.Warhammers
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Barrier Greatsword");
+            // DisplayName.SetDefault("Barrier Greatsword");
         }
 
         public override void SetDefaults()

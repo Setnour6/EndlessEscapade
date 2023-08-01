@@ -12,7 +12,7 @@ namespace EEMod.NPCs.LowerReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Jellyfish");
+            // DisplayName.SetDefault("Jellyfish");
         }
 
         public override void SetDefaults()
@@ -143,7 +143,7 @@ namespace EEMod.NPCs.LowerReefs
             NPC.ai[0]++;
         }
 
-        public override void OnHitPlayer(Player target, int damage, bool crit)
+        public override void OnHitPlayer(Player target, Player.HurtInfo hurtInfo)
         {
             target.velocity += Vector2.Normalize(target.Center - NPC.Center) * 6;
         }

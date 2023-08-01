@@ -9,7 +9,7 @@ namespace EEMod.Items.Weapons.Summon.Minions
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Hyoi Pear");
+            // DisplayName.SetDefault("Hyoi Pear");
         }
 
         public override void SetDefaults()

@@ -16,7 +16,7 @@ namespace EEMod.Projectiles.Enemy
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquamarine Chunk");
+            // DisplayName.SetDefault("Aquamarine Chunk");
         }
 
         public override void SetDefaults()

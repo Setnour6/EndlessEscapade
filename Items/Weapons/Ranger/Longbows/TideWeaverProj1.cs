@@ -7,7 +7,7 @@ namespace EEMod.Items.Weapons.Ranger.Longbows
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tennis Ball");
+            // DisplayName.SetDefault("Tennis Ball");
         }
 
         public override void SetDefaults()

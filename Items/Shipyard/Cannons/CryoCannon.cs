@@ -13,8 +13,8 @@ namespace EEMod.Items.Shipyard.Cannons
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Cryo Cannon");
-            Tooltip.SetDefault("Converts all cannonballs into frozen cannonballs\nFrozen cannonbaalls explode into shards on impact");
+            // DisplayName.SetDefault("Cryo Cannon");
+            // Tooltip.SetDefault("Converts all cannonballs into frozen cannonballs\nFrozen cannonbaalls explode into shards on impact");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59;
         }
 

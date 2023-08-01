@@ -8,7 +8,7 @@ namespace EEMod.NPCs.UpperReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Luna Jelly");
+            // DisplayName.SetDefault("Luna Jelly");
             Main.npcCatchable[NPC.type] = true;
             Main.npcFrameCount[NPC.type] = 3;
             //bannerItem = ModContent.ItemType<Items.Banners.LunaJellyBanner>();

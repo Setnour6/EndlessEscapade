@@ -6,7 +6,7 @@ namespace EEMod.Items.Weapons.Ranger.Longbows
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Atlantean Warhammer");
+            // DisplayName.SetDefault("Atlantean Warhammer");
             Main.projFrames[Projectile.type] = 7;
         }
 

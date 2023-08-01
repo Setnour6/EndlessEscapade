@@ -9,7 +9,7 @@ namespace EEMod.Items.Tools.Dalantinium
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Pickaxe");
+            // DisplayName.SetDefault("Dalantinium Pickaxe");
         }
 
         public override void SetDefaults()

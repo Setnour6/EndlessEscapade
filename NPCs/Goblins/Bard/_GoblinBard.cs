@@ -16,7 +16,7 @@ namespace EEMod.NPCs.Goblins.Bard
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Goblin Bard");
+            // DisplayName.SetDefault("Goblin Bard");
         }
 
         public override void SetDefaults()
@@ -127,7 +127,7 @@ namespace EEMod.NPCs.Goblins.Bard
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Goblin Bard");
+            // DisplayName.SetDefault("Goblin Bard");
         }
 
         public override void SetDefaults()
@@ -238,7 +238,7 @@ namespace EEMod.NPCs.Goblins.Bard
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Goblin Bard");
+            // DisplayName.SetDefault("Goblin Bard");
         }
 
         public override void SetDefaults()

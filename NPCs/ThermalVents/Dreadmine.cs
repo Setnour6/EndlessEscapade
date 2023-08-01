@@ -10,7 +10,7 @@ namespace EEMod.NPCs.ThermalVents
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dreadmine");
+            // DisplayName.SetDefault("Dreadmine");
             //  Main.projFrames[projectile.type] = 4;
         }
 
@@ -34,7 +34,7 @@ namespace EEMod.NPCs.ThermalVents
             Projectile.Center = new Vector2(OwnerNpc.ai[2], OwnerNpc.ai[3]);
         }
 
-        public override void OnHitPlayer(Player target, int damage, bool crit)
+        public override void OnHitPlayer(Player target, Player.HurtInfo info)
         {
             for (int i = 0; i < 30; i++)
             {
@@ -42,7 +42,9 @@ namespace EEMod.NPCs.ThermalVents
             }
             SoundEngine.PlaySound(SoundID.DD2_ExplosiveTrapExplode);
             Projectile.Kill();
-            OwnerNpc.StrikeNPC(55, 0, 0);
+            NPC.HitInfo nPCHitInfo = new();
+            nPCHitInfo.Damage = 55;
+            OwnerNpc.StrikeNPC(nPCHitInfo); // Don't know what values to set ~Setnour6
         }
     }
 }

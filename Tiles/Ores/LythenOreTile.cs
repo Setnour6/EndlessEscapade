@@ -2,6 +2,7 @@ using EEMod.Items.Placeables.Ores;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using EEMod.EEWorld;
 using Microsoft.Xna.Framework.Graphics;
@@ -19,12 +20,12 @@ namespace EEMod.Tiles.Ores
             Main.tileSolid[Type] = true;
             Main.tileBlockLight[Type] = true;
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Lythen Ore");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Lythen Ore");
             AddMapEntry(new Color(152, 171, 198), name);
 
             DustType = DustID.Platinum;
-            ItemDrop = ModContent.ItemType<LythenOre>();
+            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<LythenOre>();
             //SoundType = SoundID.Tink;
             //SoundStyle = 1;
             MineResist = 1f;

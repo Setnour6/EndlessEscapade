@@ -9,8 +9,8 @@ namespace EEMod.Items.Accessories
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Hallowed Diving Gear");
-            Tooltip.SetDefault("Grants freedom underwater");
+            // DisplayName.SetDefault("Hallowed Diving Gear");
+            // Tooltip.SetDefault("Grants freedom underwater");
         }
 
         public override void SetDefaults()

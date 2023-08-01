@@ -2,6 +2,7 @@ using EEMod.Items.Placeables.Ores;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace EEMod.Tiles.Ores
@@ -19,12 +20,12 @@ namespace EEMod.Tiles.Ores
             Main.tileSolid[Type] = true; // lemme open some important files so you can acess them
             Main.tileBlockLight[Type] = true; //
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Dalantinium");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Dalantinium");
             AddMapEntry(new Color(152, 171, 198), name);
 
             DustType = DustID.Platinum;
-            ItemDrop = ModContent.ItemType<DalantiniumOre>();
+            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<DalantiniumOre>();
             //SoundType = SoundID.Tink;
             //SoundStyle = 1;
             MineResist = 1f;

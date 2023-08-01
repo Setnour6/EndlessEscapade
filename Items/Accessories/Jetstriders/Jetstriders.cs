@@ -24,7 +24,7 @@ namespace EEMod.Items.Accessories.Jetstriders
         private int leanTimer = 0;
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Jetstriders");
+            // DisplayName.SetDefault("Jetstriders");
         }
 
         public override void SetDefaults()

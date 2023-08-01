@@ -2,6 +2,7 @@ using EEMod.Items.Placeables.Furniture;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using EEMod.Items.Placeables.Furniture.Trophies;
@@ -21,8 +22,8 @@ namespace EEMod.Tiles.Furniture
             TileObjectData.addTile(Type);
             DustType = 7;
             DisableSmartCursor = true;
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Trophy");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Trophy");
             AddMapEntry(new Color(120, 85, 60), name);
         }
 

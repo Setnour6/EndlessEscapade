@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.TropicalWood
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tropical Wood Boots");
-            Tooltip.SetDefault("7% increased movement speed");
+            // DisplayName.SetDefault("Tropical Wood Boots");
+            // Tooltip.SetDefault("7% increased movement speed");
         }
 
         public override void SetDefaults()

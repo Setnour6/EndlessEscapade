@@ -9,7 +9,7 @@ namespace EEMod.Items.Weapons.Ranger.Guns
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coconut Cannon");
+            // DisplayName.SetDefault("Coconut Cannon");
         }
 
         public override void SetDefaults()

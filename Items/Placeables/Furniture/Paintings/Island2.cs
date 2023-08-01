@@ -8,7 +8,7 @@ namespace EEMod.Items.Placeables.Furniture.Paintings
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Island");
+            // DisplayName.SetDefault("Island");
         }
 
         public override void SetDefaults()

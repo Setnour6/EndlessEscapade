@@ -10,7 +10,7 @@ namespace EEMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Dagger");
+            // DisplayName.SetDefault("Dalantinium Dagger");
         }
 
         public override void SetDefaults()

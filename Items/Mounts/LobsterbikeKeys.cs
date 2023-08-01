@@ -8,7 +8,7 @@ namespace EEMod.Items.Mounts
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lobsterbike Keys");
+            // DisplayName.SetDefault("Lobsterbike Keys");
         }
 
         public override void SetDefaults()

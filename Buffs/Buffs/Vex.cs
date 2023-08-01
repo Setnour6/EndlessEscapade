@@ -7,8 +7,8 @@ namespace EEMod.Buffs.Buffs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Vex");
-            Description.SetDefault("+5% damage and +5% crit chance");
+            // DisplayName.SetDefault("Vex");
+            // Description.SetDefault("+5% damage and +5% crit chance");
             Main.buffNoSave[Type] = true;
         }
 

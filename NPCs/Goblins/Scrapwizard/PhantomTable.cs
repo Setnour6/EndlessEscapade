@@ -14,7 +14,7 @@ namespace EEMod.NPCs.Goblins.Scrapwizard
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Phantom Table");
+            // DisplayName.SetDefault("Phantom Table");
         }
 
         public override void SetDefaults()

@@ -10,7 +10,7 @@ namespace EEMod.NPCs.ThermalVents
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Mechanical Eel");
+            // DisplayName.SetDefault("Mechanical Eel");
             //Main.npcFrameCount[npc.type] = 6;
         }
 

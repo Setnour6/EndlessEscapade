@@ -19,7 +19,7 @@ namespace EEMod.NPCs.TropicalIslands
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coconut Spider");
+            // DisplayName.SetDefault("Coconut Spider");
             Main.npcFrameCount[NPC.type] = 5;
         }
 

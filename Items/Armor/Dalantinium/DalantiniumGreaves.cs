@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.Dalantinium
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Greaves");
-            Tooltip.SetDefault("7% increased movement speed");
+            // DisplayName.SetDefault("Dalantinium Greaves");
+            // Tooltip.SetDefault("7% increased movement speed");
         }
 
         public override void SetDefaults()

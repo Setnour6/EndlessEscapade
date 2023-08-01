@@ -9,7 +9,7 @@ namespace EEMod.Items.Armor
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Flower Jelly Hat");
+            // DisplayName.SetDefault("Flower Jelly Hat");
         }
 
         public override void SetDefaults()

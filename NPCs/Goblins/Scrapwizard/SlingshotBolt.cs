@@ -14,7 +14,7 @@ namespace EEMod.NPCs.Goblins.Scrapwizard
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Slingshot Bolt");
+            // DisplayName.SetDefault("Slingshot Bolt");
         }
 
         public override void SetDefaults()

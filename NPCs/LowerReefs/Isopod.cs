@@ -11,7 +11,7 @@ namespace EEMod.NPCs.LowerReefs
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Isopod");
+            // DisplayName.SetDefault("Isopod");
         }
 
         public override void PostDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color drawColor)

@@ -24,7 +24,7 @@ namespace EEMod.Tiles
             AddMapEntry(new Color(48, 200, 135));
 
             DustType = DustID.Rain;
-            ItemDrop = ModContent.ItemType<Gemsandstone>();
+            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<Gemsandstone>();
             ////SoundStyle = 1;
             MineResist = 1f;
             MinPick = 0;

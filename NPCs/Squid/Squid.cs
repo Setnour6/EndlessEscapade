@@ -13,7 +13,7 @@ namespace EEMod.NPCs.Squid
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[NPC.type] = 1;
-            DisplayName.SetDefault("Squid");
+            // DisplayName.SetDefault("Squid");
         }
         public override void SetDefaults()
         {

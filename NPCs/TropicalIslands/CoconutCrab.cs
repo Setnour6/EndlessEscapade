@@ -18,7 +18,7 @@ namespace EEMod.NPCs.TropicalIslands
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coconut Crab");
+            // DisplayName.SetDefault("Coconut Crab");
             Main.npcFrameCount[NPC.type] = 4;
         }
 

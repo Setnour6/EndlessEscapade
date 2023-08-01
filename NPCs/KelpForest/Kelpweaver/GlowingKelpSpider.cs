@@ -12,7 +12,7 @@ namespace EEMod.NPCs.KelpForest.Kelpweaver
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Glowing Kelp Spider");
+            // DisplayName.SetDefault("Glowing Kelp Spider");
             //Main.npcFrameCount[npc.type] = 3;
         }
 
@@ -263,7 +263,7 @@ namespace EEMod.NPCs.KelpForest.Kelpweaver
                 jointPoints[i].X += velocityOfSpider;
             }
         }
-        public override void ScaleExpertStats(int numPlayers, float bossLifeScale)
+        public override void ApplyDifficultyAndPlayerScaling(int numPlayers, float balance, float bossAdjustment)/* tModPorter Note: bossLifeScale -> balance (bossAdjustment is different, see the docs for details) */
         {
             NPC.lifeMax = (int)(NPC.lifeMax * 0.22f);
         }

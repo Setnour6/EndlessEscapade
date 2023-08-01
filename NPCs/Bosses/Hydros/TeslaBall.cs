@@ -15,7 +15,7 @@ namespace EEMod.NPCs.Bosses.Hydros
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Lightning Ball");
+            // DisplayName.SetDefault("Lightning Ball");
         }
 
         public override void SetDefaults()

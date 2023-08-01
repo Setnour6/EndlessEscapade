@@ -8,7 +8,7 @@ namespace EEMod.Items.Placeables.Furniture
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Zip-Pylon");
+            // DisplayName.SetDefault("Zip-Pylon");
         }
 
         public override void SetDefaults()

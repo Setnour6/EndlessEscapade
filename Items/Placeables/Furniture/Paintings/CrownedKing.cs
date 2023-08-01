@@ -8,7 +8,7 @@ namespace EEMod.Items.Placeables.Furniture.Paintings
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Crowned King");
+            // DisplayName.SetDefault("Crowned King");
         }
 
         public override void SetDefaults()

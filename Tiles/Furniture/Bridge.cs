@@ -10,7 +10,7 @@ namespace EEMod.Tiles.Furniture
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tile Experimentation");
+            // DisplayName.SetDefault("Tile Experimentation");
         }
 
         private static float X(float t,

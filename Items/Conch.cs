@@ -12,7 +12,7 @@ namespace EEMod.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dev Conch");
+            // DisplayName.SetDefault("Dev Conch");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 100;
         }
 

@@ -111,7 +111,7 @@ namespace EEMod
             EENet.ReceievePacket(reader, whoAmI);
         }
 
-        public override void AddRecipeGroups()
+        public override void AddRecipeGroups()/* tModPorter Note: Removed. Use ModSystem.AddRecipeGroups */
         {
             RecipeGroup gemstoneGroup = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Gemstones", new int[]
             {

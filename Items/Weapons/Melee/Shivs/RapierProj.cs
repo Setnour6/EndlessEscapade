@@ -14,7 +14,7 @@ namespace EEMod.Items.Weapons.Melee.Shivs
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Rapier");
+            // DisplayName.SetDefault("Rapier");
         }
 
         public override void SetDefaults()

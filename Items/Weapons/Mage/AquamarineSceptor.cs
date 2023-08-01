@@ -15,7 +15,7 @@ namespace EEMod.Items.Weapons.Mage
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquamarine Sceptre");
+            // DisplayName.SetDefault("Aquamarine Sceptre");
             Item.staff[Item.type] = true;
         }
 

@@ -13,7 +13,7 @@ namespace EEMod.Items.Weapons.Melee.Swords
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Prism Dagger");
+            // DisplayName.SetDefault("Prism Dagger");
         }
 
         public override void SetDefaults()

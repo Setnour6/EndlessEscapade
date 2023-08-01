@@ -10,7 +10,7 @@ namespace EEMod.Items.Accessories
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Red Velvet Cape");
+            // DisplayName.SetDefault("Red Velvet Cape");
         }
 
         public override void SetDefaults()

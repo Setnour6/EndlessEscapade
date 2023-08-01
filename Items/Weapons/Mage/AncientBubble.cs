@@ -15,7 +15,7 @@ namespace EEMod.Items.Weapons.Mage
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Ancient Bubble");
+            // DisplayName.SetDefault("Ancient Bubble");
         }
 
         public override void SetDefaults()

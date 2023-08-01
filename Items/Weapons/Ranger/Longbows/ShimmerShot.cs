@@ -10,7 +10,7 @@ namespace EEMod.Items.Weapons.Ranger.Longbows
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Shimmer Shot");
+            // Tooltip.SetDefault("Shimmer Shot");
         }
 
         public override void SetDefaults()

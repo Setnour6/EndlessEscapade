@@ -16,7 +16,7 @@ namespace EEMod.Items.Weapons.Melee.Swords
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Prismatic Blade");
+            // DisplayName.SetDefault("Prismatic Blade");
         }
 
         public override void SetDefaults()
@@ -74,9 +74,9 @@ namespace EEMod.Items.Weapons.Melee.Swords
 
             return base.UseItem(player);
         }
-        public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
+        public override void OnHitNPC(Player player, NPC target, NPC.HitInfo hit, int damageDone)
         {
-            int damage2 = damage;
+            int damage2 = hit.Damage;
             if (damage2 > target.lifeMax)
             {
                 damage2 = target.lifeMax;

@@ -1,6 +1,7 @@
 ﻿using EEMod.Items.Weapons.Melee;
 using Terraria;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 using System;
@@ -53,9 +54,9 @@ namespace EEMod.Tiles.Furniture.GoblinFort
 
             TileObjectData.addTile(Type);
 
-            ModTranslation name = CreateMapEntryName();
+            LocalizedText name = CreateMapEntryName();
 
-            name.SetDefault("Goblin Banner");
+            // name.SetDefault("Goblin Banner");
 
             AddMapEntry(new Color(44, 193, 139), name);
 

@@ -14,7 +14,7 @@ namespace EEMod.Items.Weapons.Ranger
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Sparkstorm");
+            // DisplayName.SetDefault("Sparkstorm");
         }
 
         public override void SetDefaults()

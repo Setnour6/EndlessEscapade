@@ -8,7 +8,7 @@ namespace EEMod.Items.Weapons.Melee.Swords
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Tropical Wood Sword");
+            // DisplayName.SetDefault("Tropical Wood Sword");
         }
 
         public override void SetDefaults()

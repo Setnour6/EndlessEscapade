@@ -23,7 +23,7 @@ namespace EEMod.Tiles.Foliage
             AddMapEntry(new Color(68, 89, 195));
             //Main.tileCut[Type] = true;
             DustType = DustID.Rain;
-            ItemDrop = ModContent.ItemType<Kelp>();
+            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<Kelp>();
             //SoundStyle = SoundID.Grass;
             MineResist = 1f;
             MinPick = 0;
@@ -46,7 +46,7 @@ namespace EEMod.Tiles.Foliage
             if (!tile.HasTile && Main.rand.Next(4) == 0)
             {
                 WorldGen.PlaceObject(i, j - 1, ModContent.TileType<BlueKelpTile>());
-                NetMessage.SendObjectPlacment(-1, i, j - 1, ModContent.TileType<BlueKelpTile>(), 0, 0, -1, -1);
+                NetMessage.SendObjectPlacement(-1, i, j - 1, ModContent.TileType<BlueKelpTile>(), 0, 0, -1, -1);
             }
         }
 

@@ -10,8 +10,8 @@ namespace EEMod.Items.Armor.Dalantinium
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Dalantinium Horned Greathelm");
-            Tooltip.SetDefault("2+ max minions");
+            // DisplayName.SetDefault("Dalantinium Horned Greathelm");
+            // Tooltip.SetDefault("2+ max minions");
         }
 
         public override void SetDefaults()

@@ -20,7 +20,7 @@ namespace EEMod.Items.Weapons.Summon.Minions
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Prismatic Cane");
+            // DisplayName.SetDefault("Prismatic Cane");
         }
 
         public override string Texture => Helpers.EmptyTexture;

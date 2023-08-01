@@ -8,8 +8,8 @@ namespace EEMod.Items.Accessories
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Frozen Gauntlet");
-            Tooltip.SetDefault("coldldldododldoddllodlloldoolololdolldo \nCLOUD SPRITE\nGRAYDEE WAEPON\n:heart_eyes:");
+            // DisplayName.SetDefault("Frozen Gauntlet");
+            // Tooltip.SetDefault("coldldldododldoddllodlloldoolololdolldo \nCLOUD SPRITE\nGRAYDEE WAEPON\n:heart_eyes:");
         }
 
         public override void SetDefaults()

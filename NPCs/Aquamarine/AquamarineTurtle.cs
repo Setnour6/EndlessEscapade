@@ -14,7 +14,7 @@ namespace EEMod.NPCs.Aquamarine
 
         private int dashes;
 
-        public override void SetStaticDefaults() => DisplayName.SetDefault("Prismashell");
+        // public override void SetStaticDefaults() => DisplayName.SetDefault("Prismashell");
 
         public override void SetDefaults()
         {

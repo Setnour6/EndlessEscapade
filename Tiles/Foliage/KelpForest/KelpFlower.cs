@@ -6,6 +6,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using EEMod.Items.Placeables.Furniture;
@@ -45,8 +46,8 @@ namespace EEMod.Tiles.Foliage.KelpForest
             // TileObjectData.newTile.LavaDeath = false;
             TileObjectData.addTile(Type);
 
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Kelpblossom");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Kelpblossom");
             AddMapEntry(Color.DarkMagenta, name);
             DustType = DustID.PurpleTorch;
             DisableSmartCursor = true;

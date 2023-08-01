@@ -22,7 +22,7 @@ namespace EEMod.Tiles
             AddMapEntry(new Color(26, 13, 0));
 
             DustType = DustID.Rain;
-            ItemDrop = ModContent.ItemType<Coralsandstone>();
+            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<Coralsandstone>();
             //SoundStyle = 1;
             MineResist = 1f;
             MinPick = 0;

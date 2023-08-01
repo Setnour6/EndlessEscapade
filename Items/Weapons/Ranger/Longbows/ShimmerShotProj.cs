@@ -17,7 +17,7 @@ namespace EEMod.Items.Weapons.Ranger.Longbows
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Shimmer Shot");
+            // DisplayName.SetDefault("Shimmer Shot");
             Main.projFrames[Projectile.type] = 4;
         }
 

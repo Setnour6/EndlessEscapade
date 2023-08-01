@@ -9,7 +9,7 @@ namespace EEMod.Items.Placeables.Walls
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Coralsand Wall");
+            // DisplayName.SetDefault("Coralsand Wall");
         }
 
         public override void SetDefaults()

@@ -12,7 +12,7 @@ namespace EEMod.Items.Weapons.Melee
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Brute Halberd");
+            // DisplayName.SetDefault("Brute Halberd");
         }
 
         public override void SetDefaults()

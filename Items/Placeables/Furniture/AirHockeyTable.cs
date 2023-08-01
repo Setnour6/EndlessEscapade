@@ -8,8 +8,8 @@ namespace EEMod.Items.Placeables.Furniture
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Air Hockey Table");
-            Tooltip.SetDefault("Fun for the whole family!");
+            // DisplayName.SetDefault("Air Hockey Table");
+            // Tooltip.SetDefault("Fun for the whole family!");
         }
 
         public override void SetDefaults()

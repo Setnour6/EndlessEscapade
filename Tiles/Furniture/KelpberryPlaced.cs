@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Microsoft.Xna.Framework.Graphics;
@@ -30,11 +31,11 @@ namespace EEMod.Tiles.Furniture
             TileObjectData.newTile.Origin = new Point16(0, 0);
             TileObjectData.addTile(Type);
 
-            ModTranslation name = CreateMapEntryName("Kelpberries");
+            LocalizedText name = CreateMapEntryName("Kelpberries");
             AddMapEntry(new Color(200, 180, 0), name);
 
             DustType = DustID.AmberBolt;
-            ItemDrop = ModContent.ItemType<Kelpberries>();
+            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<Kelpberries>();
         }
 
 

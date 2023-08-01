@@ -8,7 +8,7 @@ namespace EEMod.Items.Materials
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Hydros Scales");
+            // DisplayName.SetDefault("Hydros Scales");
             ItemID.Sets.SortingPriorityMaterials[Item.type] = 59; // influences the inventory sort order. 59 is PlatinumBar, higher is more valuable.
         }
 

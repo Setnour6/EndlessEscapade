@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -20,8 +21,8 @@ namespace EEMod.Tiles.Foliage.Coral
             TileObjectData.newTile.CoordinateWidth = 16;
             TileObjectData.newTile.Origin = new Point16(0, 0);
             TileObjectData.addTile(Type);
-            ModTranslation name = CreateMapEntryName();
-            name.SetDefault("Wide Bulbous Coral");
+            LocalizedText name = CreateMapEntryName();
+            // name.SetDefault("Wide Bulbous Coral");
             AddMapEntry(new Color(50, 50, 50), name);
             DisableSmartCursor = true;
             AnimationFrameHeight = 38;

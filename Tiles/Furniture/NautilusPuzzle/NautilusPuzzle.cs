@@ -3,6 +3,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 using Microsoft.Xna.Framework.Graphics;
@@ -29,9 +30,9 @@ namespace EEMod.Tiles.Furniture.NautilusPuzzle
             TileObjectData.newTile.Direction = TileObjectDirection.None;
             TileObjectData.newTile.LavaDeath = true;
             TileObjectData.addTile(Type);
-            ModTranslation name = CreateMapEntryName();
+            LocalizedText name = CreateMapEntryName();
 
-            name.SetDefault("Shrine of the Water Rune");
+            // name.SetDefault("Shrine of the Water Rune");
             AddMapEntry(new Color(0, 120, 255), name);
             DisableSmartCursor = true;
         }

@@ -9,7 +9,7 @@ namespace EEMod.Items.Placeables
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Light Gemsandstone");
+            // DisplayName.SetDefault("Light Gemsandstone");
         }
 
         public override void SetDefaults()

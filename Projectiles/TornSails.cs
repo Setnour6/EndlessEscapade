@@ -10,7 +10,7 @@ namespace EEMod.Projectiles
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Torn Sails");
+            // DisplayName.SetDefault("Torn Sails");
         }
 
         public override void SetDefaults()
