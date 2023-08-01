@@ -28,7 +28,7 @@ namespace EEMod.Tiles
             AddMapEntry(_mapColor);
 
             DustType = _dustType;
-            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = _drop;
+            RegisterItemDrop(_drop);
             MineResist = _mineResist;
             MinPick = _minPick;
         }

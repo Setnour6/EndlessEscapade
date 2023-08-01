@@ -35,10 +35,10 @@ namespace EEMod.Tiles.Furniture.Chests
 
 			DustType = DustID.CrystalSerpent_Pink;
 			AdjTiles = new int[] { TileID.Containers };
-			ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ItemID.DirtBlock;
+			RegisterItemDrop(ItemID.DirtBlock);
 
 			// Names
-			ContainerName/* tModPorter Note: Removed. Override DefaultContainerName instead */.SetDefault("Shadowflame Hex Chest");
+			//ContainerName/* tModPorter Note: Removed. Override DefaultContainerName instead */.SetDefault("Shadowflame Hex Chest");
 
 			LocalizedText name = CreateMapEntryName();
 			// name.SetDefault("Shadowflame Hex Chest");
@@ -56,7 +56,11 @@ namespace EEMod.Tiles.Furniture.Chests
 			TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, TileObjectData.newTile.Width, 0);
 			TileObjectData.addTile(Type);
 		}
-
+		public override LocalizedText DefaultContainerName(int frameX, int frameY)
+		{
+			int option = frameX / 36;
+			return this.GetLocalization("MapEntry" + option); // Is this even good? Should we use return CreateMapEntryName(); instead?
+		}
 		public override ushort GetMapOption(int i, int j) => 0;
 
 		public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings) => true;
@@ -107,7 +111,7 @@ namespace EEMod.Tiles.Furniture.Chests
 
 		public override void KillMultiTile(int i, int j, int TileFrameX, int TileFrameY)
 		{
-			Item.NewItem(new Terraria.DataStructures.EntitySource_TileBreak(i, j), i * 16, j * 16, 32, 32, ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */);
+			Item.NewItem(new Terraria.DataStructures.EntitySource_TileBreak(i, j), new Vector2(i * 16, j * 16), 32, 32); // is this good?
 			Chest.DestroyChest(i, j);
 		}
 

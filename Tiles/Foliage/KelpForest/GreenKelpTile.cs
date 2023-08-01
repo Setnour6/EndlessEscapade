@@ -23,7 +23,7 @@ namespace EEMod.Tiles.Foliage.KelpForest
             AddMapEntry(new Color(95, 143, 65));
             //Main.tileCut[Type] = true;
             DustType = DustID.Plantera_Green;
-            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<Kelp>();
+            RegisterItemDrop(ModContent.ItemType<Kelp>());
             //SoundStyle = SoundID.Grass;
             MineResist = 1f;
             MinPick = 0;

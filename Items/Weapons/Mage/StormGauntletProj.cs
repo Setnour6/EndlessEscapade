@@ -113,8 +113,8 @@ namespace EEMod.Items.Weapons.Mage
 
                     if (Projectile.velocity.Length() > 4 && Vector2.Distance(grabbed.Center, Projectile.Center) <= 32f)
                     {
-                        grabbed.StrikeNPC((int)MathHelper.Clamp(Projectile.velocity.Length(), 6, 20), 3.5f, 0);
-                        collisionCooldown = 8;
+                        grabbed.SimpleStrikeNPC((int)MathHelper.Clamp(Projectile.velocity.Length(), 6, 20), -1, knockBack: 3.5f); // Previously (int)MathHelper.Clamp(Projectile.velocity.Length(), 6, 20), 3.5f, 0. I don't know what is correct here.
+						collisionCooldown = 8;
                         Projectile.velocity += -Projectile.velocity * 2f;
                         stunned = 3;
                     }
@@ -158,9 +158,9 @@ namespace EEMod.Items.Weapons.Mage
         {
             if (Projectile.velocity.Length() > 4 && grabbed != null && collisionCooldown <= 0)
             {
-                grabbed.StrikeNPC((int)MathHelper.Clamp(Projectile.velocity.Length(), 6, 20), 0f, 0);
+                grabbed.SimpleStrikeNPC((int)MathHelper.Clamp(Projectile.velocity.Length(), 6, 20), -1, knockBack: 0f); // Previously (int)MathHelper.Clamp(Projectile.velocity.Length(), 6, 20), 0f, 0. I don't know what is correct here.
 
-                grabbed = null;
+				grabbed = null;
 
                 Projectile.ai[0] = 7;
 

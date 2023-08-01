@@ -14,7 +14,7 @@ namespace EEMod.Tiles.Walls
 
             Main.wallHouse[Type] = true;
             DustType = DustID.Rain;
-            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<GemsandstoneWall>();
+            RegisterItemDrop(ModContent.ItemType<GemsandstoneWall>());
             //SoundStyle = 1;
         }
     }

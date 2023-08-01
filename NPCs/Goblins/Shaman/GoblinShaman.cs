@@ -322,9 +322,9 @@ namespace EEMod.NPCs.Goblins.Shaman
         public override void AI()
         {
             NPC.ai[0]++;
-            if (NPC.ai[0] >= 300) NPC.StrikeNPC(100, 0, 0);
+            if (NPC.ai[0] >= 300) NPC.SimpleStrikeNPC(100, 0, knockBack: 0); // I don't know if player direction of 0 is a good idea. I wonder what happens.
 
-            NPC.velocity = Vector2.Lerp(NPC.velocity, Vector2.Normalize(Main.LocalPlayer.Center - NPC.Center) * 6, 0.02f);
+			NPC.velocity = Vector2.Lerp(NPC.velocity, Vector2.Normalize(Main.LocalPlayer.Center - NPC.Center) * 6, 0.02f);
         }
 
         public override bool? DrawHealthBar(byte hbPosition, ref float scale, ref Vector2 position)

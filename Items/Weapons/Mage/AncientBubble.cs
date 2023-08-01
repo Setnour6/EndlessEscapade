@@ -99,8 +99,8 @@ namespace EEMod.Items.Weapons.Mage
 
             foreach (var enemy in list)
             {
-                if (enemy.friendly == false) enemy.StrikeNPC(Projectile.damage, 0f, Projectile.Center.X - enemy.Center.X <= 0 ? -1 : 1);
-            }
+                if (enemy.friendly == false) enemy.SimpleStrikeNPC(Projectile.damage, Projectile.Center.X - enemy.Center.X <= 0 ? -1 : 1, knockBack: 0f); // Previously Projectile.damage, 0f, Projectile.Center.X - enemy.Center.X <= 0 ? -1 : 1
+			}
 
             Projectile.Kill();
 

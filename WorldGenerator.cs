@@ -12,7 +12,7 @@ namespace EEMod
     public class WorldGenerator
     {
         internal List<GenPass> _passes = new List<GenPass>();
-        internal float _totalLoadWeight;
+        internal double _totalLoadWeight; // Previously float
         internal int _seed;
 
         public WorldGenerator(int seed) => _seed = seed;
@@ -26,7 +26,7 @@ namespace EEMod
         public void GenerateWorld(GenerationProgress progress = null)
         {
             Stopwatch stopwatch = new Stopwatch();
-            float num = 0f;
+            double num = 0f; // Previously float
 
             foreach (GenPass pass in _passes)
             {

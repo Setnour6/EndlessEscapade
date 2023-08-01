@@ -31,11 +31,11 @@ namespace EEMod.Tiles.Furniture
             TileObjectData.newTile.Origin = new Point16(0, 0);
             TileObjectData.addTile(Type);
 
-            LocalizedText name = CreateMapEntryName("Kelpberries");
-            AddMapEntry(new Color(200, 180, 0), name);
+            LocalizedText name = CreateMapEntryName(); //"Kelpberries", use localization file
+			AddMapEntry(new Color(200, 180, 0), name);
 
             DustType = DustID.AmberBolt;
-            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<Kelpberries>();
+            RegisterItemDrop(ModContent.ItemType<Kelpberries>());
         }
 
 

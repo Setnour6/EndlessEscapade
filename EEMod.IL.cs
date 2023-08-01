@@ -203,7 +203,7 @@ namespace EEMod
                 if (disposed)
                     throw new ObjectDisposedException("Cannot apply a disposed ILHook");
 
-                MonoModHooks.Modify(_to, _manipulator);
+                MonoModHooks.Modify(_to, (ILContext.Manipulator)_manipulator);
                 _applied = true;
                 OnApply?.Invoke();
             }
@@ -211,7 +211,7 @@ namespace EEMod
             {
                 if (!_applied)
                     return;
-                HookEndpointManager.Unmodify(_to, _manipulator);
+                // HookEndpointManager.Unmodify(_to, _manipulator); // SOMEONE needs to find a better way to dispose of hooks like this
                 _applied = false;
                 OnUnapply?.Invoke();
             }

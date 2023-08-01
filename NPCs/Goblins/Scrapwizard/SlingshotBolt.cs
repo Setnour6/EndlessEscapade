@@ -57,8 +57,8 @@ namespace EEMod.NPCs.Goblins.Scrapwizard
             {
                 if ((NPC.position.X == NPC.oldPosition.X) || (NPC.position.Y == NPC.oldPosition.Y) || (NPC.velocity.X != NPC.oldVelocity.X) || (NPC.velocity.Y != NPC.oldVelocity.Y))
                 {
-                    NPC.StrikeNPC(100000, 0, 0);
-                }
+                    NPC.SimpleStrikeNPC(100000, 0, knockBack: 0); // I don't know if player direction of 0 is a good idea. I wonder what happens.
+				}
             }
 
             NPC.rotation = (Main.player[(int)NPC.ai[1]].Center - NPC.Center).ToRotation();

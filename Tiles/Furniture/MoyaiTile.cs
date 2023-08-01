@@ -31,7 +31,7 @@ namespace EEMod.Tiles.Furniture
             TileObjectData.addTile(Type);
             LocalizedText name = CreateMapEntryName();
             // name.SetDefault("Moyai");
-            ItemDrop/* tModPorter Note: Removed. Tiles and walls will drop the item which places them automatically. Use RegisterItemDrop to alter the automatic drop if necessary. */ = ModContent.ItemType<Moyai>();
+            RegisterItemDrop(ModContent.ItemType<Moyai>());
             AddMapEntry(new Color(20, 60, 20), name);
             DisableSmartCursor = true;
             DustType = DustID.Dirt;
